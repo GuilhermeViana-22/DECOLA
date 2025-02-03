@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +21,30 @@
 
 
 </head>
+
 <body>
     <!-- Header -->
     <header>
-        @include('components.header.header')  <!-- Inclui o arquivo nav.blade.php -->
-        @include('components.nav.nav')  <!-- Inclui o arquivo nav.blade.php -->
+        @include('components.header.header') <!-- Inclui o arquivo nav.blade.php -->
+        @include('components.nav.nav') <!-- Inclui o arquivo nav.blade.php -->
     </header>
 
     <!-- Main content -->
     <main>
-        @include('components.banner.banner')  <!-- Inclui o arquivo nav.blade.php -->
+        @include('components.banner.banner') <!-- Inclui o arquivo nav.blade.php -->
+        @include('components.about.about') <!-- Inclui o arquivo about.blade.php -->
+        @include('components.missao.missao') <!-- Inclui o arquivo missao.blade.php -->
+        @include('components.curso.curso') <!-- Inclui o arquivo missao.blade.php -->
+        @include('components.resultados.resultados') <!-- Inclui o arquivo missao.blade.php -->
+        @include('components.depoimentos.depoimentos') <!-- Inclui o arquivo missao.blade.php -->
+
+        @include('components.news.news') <!-- Inclui o arquivo missao.blade.php -->
     </main>
 
     <!-- Footer -->
     <footer>
-        @include('components.footer.footer')  <!-- Inclui o arquivo footer.blade.php -->
+        @include('components.footer.footer') <!-- Inclui o arquivo footer.blade.php -->
     </footer>
-</body> 
+</body>
+
 </html>

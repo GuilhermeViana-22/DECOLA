@@ -1,27 +1,16 @@
-<div class="wm-fancy-title">
-    <br>
-    <br>
-    <h2>Quer receber nossas <span>Novidades ?</span></h2>
-    <p>Não perca a oportunidade de receber ofertas exclusivas da nossa plataforma de ensino! Deixe seu e-mail abaixo para ficar por dentro de todas as novidades e promoções especiais.<br><small>Prometemos não enviar spam, apenas informações relevantes e ofertas imperdíveis.</small></p>
-
-</div>
-
-<!--// FooterNewsLatter \\-->
-<div class="wm-footer-newslatter">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <form>
-                    <i class="wmicon-interface2"></i>
-                    <input type="text" value="Deixe aqui seu melhor email"
-                           onblur="if(this.value == '') { this.value ='Enter your e-mail address'; }"
-                           onfocus="if(this.value =='Enter your e-mail address') { this.value = ''; }">
-
-                    <input type="submit" value="Inscreva-se na nossa newsletter" class="btn-newsletter">
-                </form>
+<section class="newsletter-container">
+    <div class="container text-center">
+        <h2 class="newsletter-title">Assine Nossa Newsletter e Transforme Sua Jornada!</h2>
+        <p class="newsletter-subtitle">
+            Receba insights exclusivos, dicas práticas e as últimas novidades sobre desenvolvimento pessoal e profissional.
+        </p>
+        <form class="newsletter-form">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Enviar
+                </button>
             </div>
-        </div>
+        </form>
     </div>
-</div>
-<!--// FooterNewsLatter \\-->
+</section>
