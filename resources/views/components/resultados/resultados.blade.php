@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-4">
                 <div class="wm-questions-studying">
-                    <img src="extra-images/ask-questoin-bg.png" alt="Perguntas sobre estudo">
+                    <img src="{{asset('extra-images/ask-questoin-bg.png')}}" alt="Perguntas sobre estudo">
                     <h3 class="wm-color">Dúvidas sobre estudar conosco?</h3>
                     <p>Nossa equipe de consultores e mentores está pronta para responder a todas as suas perguntas:</p>
                     <a class="wm-banner-btn" href="#">Pergunte agora</a>

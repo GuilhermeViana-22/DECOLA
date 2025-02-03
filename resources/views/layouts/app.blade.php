@@ -39,5 +39,22 @@
         @include('components.footer.footer') <!-- Inclui o arquivo footer.blade.php -->
     </footer>
 </body>
-
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/arearestrita.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
+<script src="{{ asset('js/cep.js') }}"></script>
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/prettyphoto.js') }}"></script>
+{{-- script --}}
+<script src="{{ asset('script/fitvideo.js') }}"></script>
+<script src="{{ asset('script/functions.js') }}"></script>
+<script src="{{ asset('script/isotope.min.js') }}"></script>
+<script src="{{ asset('script/jquery.countdown.min.js') }}"></script>
+<script src="{{ asset('script/jquery.nicescroll.min.js') }}"></script>
+<script src="{{ asset('script/jquery.prettyphoto.js') }}"></script>
+<script src="{{ asset('script/modernizr.js') }}"></script>
+<script src="{{ asset('script/skills.js') }}"></script>
+<script src="{{ asset('script/slick.slider.min.js') }}"></script>
+<script src="{{ asset('script/waypoints-min.js') }}"></script>
 </html>

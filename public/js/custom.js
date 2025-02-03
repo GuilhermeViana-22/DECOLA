@@ -1,5 +1,6 @@
 
 
+
 //anima��o dos itens
 const target = document.querySelectorAll('[data-anime]');
 const card = document.querySelectorAll('.missao');

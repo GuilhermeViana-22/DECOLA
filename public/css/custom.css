@@ -1,96 +1,11 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900italic,900);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
-
-/*
-01. Theme Typo
-02. Header
-	02.1 Top Strip
-		02.1.1 Top Info
-		02.1.2 Search
-	02.1 Logo
-	02.2 Navigation
-		02.2.1 SubMenu
-		02.2.1 MegaMenu
-03. Content
-
-	03.1 Blog
-		03.1.2 Blog Grid
-		03.1.3 Blog Grid Two
-		03.1.4 Blog Medium
-		03.1.5 Blog Detail
-
-	03.4 Team
-		03.4.1 Team Grid
-		03.4.2 Team list
-		03.4.3 Team Detail
-
-	03.5 Shortcode
-		03.5.1 Accordian
-		03.5.2 Testimonial
-		03.5.3 Services
-		03.5.4 Team
-		03.5.5 Form
-		03.5.6 Tabs
-		03.5.7 Partner
-		03.5.8 Button
-		03.5.9 Accordian
-		03.5.10 List
-		03.5.11 Table
-		03.5.12 Typography
-
-	03.6 Default Pages Style
-		03.6.1 404
-		03.6.2 UnderCuntruction
-		03.6.3 No Search Result
-		03.6.4 Services
-		03.6.5 Contact Us
-
-	03.7 Case Studies
-		03.7.1 Case Studies Grid
-		03.7.2 Case Studies Grid Two
-		03.7.3 Case Studies List
-		03.7.4 Case Studies Detail
-
-	03.8 Careers
-		03.8.1 Careers Job Listing
-		03.8.2 Careers Vacancy
-		03.8.3 Company History
-		03.8.4 Our Clients
-		03.8.5 Our Strategy
-
-	03.9 Shop
-		03.9.1 Shop Grid
-		03.9.2 Shop List
-		03.9.3 Shop Detail
-
-04. Sidebar Widget
-	04.1 Widget CATEGORY WIDGET
-	04.2 Widget Search
-	04.3 Widget Our Photos
-	04.4 Widget Text
-	04.5 Widget Recent Posts
-	04.7 Widget Newsletter
-	04.8 Testimonial
-	04.9 Popular Tags
-	04.10 Featured Articles
-	04.11 Widget Calendar
-
-05. Footer
-	05.1 backTo Top
-	05.2 CopyRight
-	05.3 Social Network
-*/
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #ffffff;
+
     color: #424242;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
     font-weight: normal;
 }
@@ -101,11 +16,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-    color: #6c8391;
-    font-family: 'Merriweather', serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
+
     margin: 0 0 8px;
 }
 
@@ -1306,7 +1217,7 @@ address {
 
 /* Estilização da seção */
 .missao {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     text-align: center;
     padding: 50px 20px;
 }
