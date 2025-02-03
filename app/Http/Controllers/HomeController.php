@@ -12,7 +12,7 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('pages.about');  // Caminho para a página home.blade.php
+        return view('pages.home');  // Caminho para a página home.blade.php
     }
 
 
