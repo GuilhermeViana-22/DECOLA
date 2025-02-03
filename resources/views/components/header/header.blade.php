@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <a href="index-2.html" class="wm-logo">
-                        <img src="{{ asset('/arquivos/logos/1.png') }}" alt="Logo">
+                        <p>sua logo aqui</p>
                     </a>
                 </div>
                 <div class="col-md-9">

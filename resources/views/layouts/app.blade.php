@@ -1,3 +1,5 @@
+<!-- resources/views/layouts/app.blade.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,27 +20,18 @@
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slick-slider.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        @include('components.header.header') <!-- Inclui o arquivo nav.blade.php -->
+        @include('components.header.header') <!-- Inclui o arquivo header.blade.php -->
         @include('components.nav.nav') <!-- Inclui o arquivo nav.blade.php -->
     </header>
 
     <!-- Main content -->
     <main>
-        @include('components.banner.banner') <!-- Inclui o arquivo nav.blade.php -->
-        @include('components.about.about') <!-- Inclui o arquivo about.blade.php -->
-        @include('components.missao.missao') <!-- Inclui o arquivo missao.blade.php -->
-        @include('components.curso.curso') <!-- Inclui o arquivo missao.blade.php -->
-        @include('components.resultados.resultados') <!-- Inclui o arquivo missao.blade.php -->
-        @include('components.depoimentos.depoimentos') <!-- Inclui o arquivo missao.blade.php -->
-
-        @include('components.news.news') <!-- Inclui o arquivo missao.blade.php -->
+        @yield('content') <!-- O conteúdo das páginas específicas vai ser inserido aqui -->
     </main>
 
     <!-- Footer -->
