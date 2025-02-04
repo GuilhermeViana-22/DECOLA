@@ -19,17 +19,17 @@
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold mb-3">Siga-nos</h5>
                 <div class="social-icons">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-linkedin"></i></a>
                 </div>
             </div>
 
             <div class="col-md-3 mb-4">
                 <h5 class="fw-bold mb-3">Nossos instrutores</h5>
                 <div class="d-flex gap-2">
-                    <img src="https://via.placeholder.com/50" alt="Instrutor 1" class="instructor-avatar">
-                    <img src="https://via.placeholder.com/50" alt="Instrutor 2" class="instructor-avatar">
+                    <img src="{{ asset('arquivos/professor/barreto.png') }}" alt="Barreto" class="instructor-avatar">
+                    <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Felipe" class="instructor-avatar">
                 </div>
             </div>
         </div>
