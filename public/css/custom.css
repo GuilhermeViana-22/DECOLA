@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
-
+    max-width: 100%;
     color: #424242;
     font-size: 15px;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 body h1,
@@ -96,11 +98,6 @@ iframe {
     float: left;
     width: 100%;
 }
-
-.wp-caption,
-.wp-caption-text,
-.gallery-caption,
-.bypostauthor {}
 
 .wp-caption.alignleft,
 .wp-caption.alignnone {
@@ -286,13 +283,16 @@ address {
     font-style: italic;
 }
 
-.sticky {}
+.wm-testimonial-full{
+    background-color: #ffffff;
+}
 
 .wm-main-section,
 .wm-main-content {
     float: left;
     width: 100%;
     position: relative;
+
 }
 
 .wm-main-content {
@@ -1089,127 +1089,32 @@ address {
 }
 
 /* Banner */
-.wm-main-banner,
-.wm-banner-one,
-.wm-banner-one-for-layer,
-.wm-banner-one-nav-layer,
-.wm-banner-one-for-layer img {
-    float: left;
-    width: 100%;
+.banner-section {
+    background-image: url('/extra-images/banner-view1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 90px);
 }
-
-.wm-banner-one-for {
-    float: left;
-    width: 54%;
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 90px);
 }
-
-.wm-banner-one-nav {
-    float: left;
-    width: 46%;
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 200px;
 }
-
-.wm-banner-one {
-    position: relative;
-}
-
-.wm-banner-one-nav-layer.slick-current {
-    border-left: 4px solid #e50515;
-}
-
-.wm-banner-one-nav-layer.slick-current h1 {
+.display-4{
     color: #ffffff;
-}
-
-.wm-banner-one-nav-layer.slick-current p {
-    color: #c3c8e2;
-}
-
-.wm-banner-one-nav-layer.banner-bgcolor {
-    background-color: #efefef;
-}
-
-.wm-banner-one-nav-layer {
-    background-color: #f4f4f4;
-    padding: 46px 70px 50px 70px;
-}
-
-.wm-banner-one-nav-layer h1 {
-    margin-bottom: 6px;
-}
-
-.wm-banner-one-nav-layer p {
-    margin-bottom: 26px;
-    width: 67%;
-}
-
-.wm-banner-btn {
-    display: inline-block;
-    padding: 11px 21px 10px 21px;
-    font-size: 12px;
-    color: #e50515;
-    border: 1px solid;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.wm-banner-btn:hover,
-.wm-banner-one-nav-layer.slick-current .wm-banner-btn {
-    color: #ffffff;
-}
-
-.wm-banner-one .slick-arrow {
-    color: #ffffff;
-    font-size: 35px;
-    top: auto;
-    bottom: 0px;
-}
-
-.wm-banner-one .slick-arrow.slick-arrow-left {
-    left: 27px;
-    bottom: 89px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.wm-banner-one .slick-arrow.slick-arrow-right {
-    right: auto;
-    left: 30px;
-    bottom: 30px;
-}
-
-.wm-banner-one .slick-arrow.slick-arrow-right i {
-    display: inline-block;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-/* BannerTwo */
-.wm-banner-two-layer {
-    float: left;
-    width: 100%;
-    position: relative;
-}
-
-.wm-bannertwo-transparent {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
+    margin-top: 300px;
 }
 
 /* area de estaques do banner azul e algumas frases de efeito  */
 #vm-destaque-one {
     background-color: #00345e;
     color: #ffffff;
-    height: 200px;
+    height: auto;
 }
 /* area de estaques do banner azul e algumas frases de efeito  */
 
@@ -1296,10 +1201,13 @@ address {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    max-width: 350px;
-    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Efeito hover no card */
 .curso-card:hover {
     transform: translateY(-5px);
 }
@@ -1308,12 +1216,17 @@ address {
 .curso-card img {
     width: 100%;
     height: auto;
+    border-bottom: 2px solid #e0e0e0; /* Borda sutil na parte inferior da imagem */
 }
 
 /* Corpo do card */
 .curso-card .card-body {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 /* Título do curso */
@@ -1328,44 +1241,41 @@ address {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Preço final em verde */
+.curso-card .price-text {
+    color: #28a745; /* Verde para o preço final */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
 }
 
 /* Botão de compra */
 .curso-card .btn {
     display: block;
     width: 100%;
-    background: #001F3F; /* Azul escuro */
-    color: #fff;
+    background: #ffffff; /* Fundo branco */
+    color: #003366; /* Texto azul escuro */
     font-weight: bold;
-    padding: 10px;
+    padding: 12px;
+    border: 2px solid #003366; /* Borda azul escuro */
     border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Distância do preço */
 }
 
+/* Efeito hover no botão */
 .curso-card .btn:hover {
-    background: #003366; /* Azul mais claro */
+    background-color: #003366; /* Fundo azul escuro no hover */
+    color: #ffffff; /* Texto branco */
+    border-color: #002244; /* Borda ainda mais escura no hover */
 }
 
-/* Estilização da borda vermelha e azul no fundo */
-.curso-container::before,
-.curso-container::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: red;
-    top: 0;
-    left: 0;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-}
 
-.curso-container::after {
-    background: #001F3F;
-    top: auto;
-    bottom: 0;
-    left: auto;
-    right: 0;
-    clip-path: polygon(100% 100%, 0 100%, 100% 0);
-}
+
+
 
 /*area para estilização do curso */
 
@@ -5502,92 +5412,63 @@ ul li:hover .wm-ctservice-icon {
     opacity: 1;
 }
 
-/* Testimonial Slider */
-.wm-modren-testimonial-slider,
-.wm-modren-testimonial-layer,
-.wm-modren-testimonial-layer figure a,
-.wm-modren-testimonial-layer figure img {
-    float: left;
-    width: 100%;
+/* Testimonial Slider *//* Estilos Gerais para Testemunhos */
+.testemunhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.wm-modren-testimonial-layer figure {
-    float: left;
-    width: 145px;
-    margin: 20px 0px 0px 0px;
-    z-index: 1;
+/* Estilos Padrão para os Cards */
+.testemunho-card {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.wm-modren-testimonial-slider .slick-list {
-    margin: 0px -12px;
+.testemunho-card:hover {
+    transform: translateY(-5px);
 }
 
-.wm-modren-testimonial-layer {
-    padding: 0px 12px;
+/* Card Azulado */
+.testemunho-azul {
+    background: linear-gradient(135deg, #3a8dde, #1f6fb2);
 }
 
-.wm-modren-testimonial-layer figure img {
-    border-radius: 100%;
+/* Card Avermelhado */
+.testemunho-vermelho {
+    background: linear-gradient(135deg, #de3a3a, #b21f1f);
 }
 
-.wm-modren-testimonial-layer figure~.wm-modren-testimonial-text {
-    margin-left: 73px;
+/* Estilização das imagens e legendas */
+.testemunho-card figure {
+    margin: 15px 0;
 }
 
-.wm-modren-testimonial-text {
-    background-color: #f9f9f9;
-    padding: 39px 35px 36px 100px;
-    position: relative;
+.testemunho-card .wm-testimonial-thumb img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.8);
 }
 
-.wm-modren-testimonial-text:before {
-    content: '';
-    background: url(images/testimonial-qoutes-2.png);
-    position: absolute;
-    left: 13%;
-    top: 20px;
-    width: 23px;
-    height: 19px;
+.testemunho-card h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.wm-modren-testimonial-text em {
-    margin-bottom: 20px;
+.testemunho-card span {
+    font-size: 14px;
+    opacity: 0.8;
 }
 
-.wm-modren-testimonial-text em,
-.wm-modren-testimonial-text small {
-    display: block;
-    color: #303030;
-    font-size: 16px;
-}
-
-.wm-modren-testimonial-text span {
-    color: #303030;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.wm-modren-testimonial-slider .slick-arrow {
-    font-size: 38px;
-    color: #e4e4e4;
-    top: 8px;
-}
-
-.wm-modren-testimonial-slider .slick-arrow.slick-arrow-left {
-    left: auto;
-    right: 60px;
-}
-
-.wm-modren-testimonial-slider .slick-arrow.slick-arrow-right {
-    right: 15px;
-}
-
-/* Partner */
-.wm-partners-title-three.wm-simple-section-title h2 {
-    color: #303030;
-    position: relative;
-}
 
 .wm-simple-section-title.wm-partners-title-three {
     width: 91%;

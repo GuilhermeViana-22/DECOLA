@@ -6,12 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="wm-language">
-                        <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Português</a></li>
-                        </ul>
-                    </div>
+                 
                     <ul class="wm-stripinfo">
                         <li><i class="wmicon-location"></i> São Paulo, SP</li>
                         <li><i class="wmicon-technology4"></i> +55 (11) 98043-9535</li>

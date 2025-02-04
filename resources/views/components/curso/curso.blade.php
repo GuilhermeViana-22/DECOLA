@@ -1,20 +1,26 @@
 <section class="curso-container py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Cursos Populares</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="curso-card card shadow-sm">
-                    <img src="imagem-do-curso.jpg" class="card-img-top" alt="Curso Soft-skills">
-                    <div class="card-body">
-                        <h5 class="card-title">Soft-skills</h5>
-                        <p class="card-text">como as 12 habilidades do futuro pela UNESCO</p>
-                        <p class="card-text">R$ 2.376,00 à vista ou 12x R$ 198,00</p>
-                        <p class="card-text">3.500 alunos | 14 avaliações</p>
-                        <a href="#" class="btn btn-primary">Adquirir</a>
+    <h2 class="text-center mb-4">Cursos Populares</h2>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="curso-card card shadow-sm">
+                <img src="{{ asset('extra-images/shop-gird-9.jpg') }}" class="card-img-top" alt="Curso Soft-skills">
+                <div class="card-body">
+                    <h5 class="card-title">Soft-skills</h5>
+                    <p class="card-text">Como as 12 habilidades do futuro pela UNESCO</p>
+                    <p class="card-text price-text"><span class="fas fa-tag"></span> <span class="price">R$ 2.376,00 Ã 
+                            vista</span> ou 12x <span class="price">R$ 198,00</span></p>
+                    <div class="ratings mb-2">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star-half-alt"></span>
+                        <br>
+                        <span class="text-muted">(3.500 alunos | 14 avaliaÃ§Ãµes)</span>
                     </div>
+                    <a href="#" class="btn btn-outline-light w-100">Adquirir</a>
                 </div>
             </div>
-            <!-- Replicar o bloco acima para outros cursos -->
         </div>
     </div>
 </section>
