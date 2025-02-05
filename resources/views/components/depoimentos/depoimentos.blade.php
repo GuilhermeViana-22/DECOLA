@@ -112,3 +112,4 @@
         </div>
     </div>
 </section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00345e" fill-opacity="1" d="M0,96L1440,0L1440,0L0,0Z"></path></svg>

@@ -75,7 +75,9 @@ section{
 #vm-destaque-one{
     background-color: #00345e;
 }
-
+i{
+    color: white;
+}
 /* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
 .navbar-brand {
     margin-left: 0 !important;

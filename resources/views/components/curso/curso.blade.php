@@ -1,4 +1,4 @@
-<section class="curso-container py-5" style="background-color: #f8f9fa;">
+<section id="cursos" class="curso-container py-5" style="background-color: #f8f9fa;">
     <div class="container">
         <h2 class="text-center mb-4">Cursos Populares</h2>
         <div class="row justify-content-center">

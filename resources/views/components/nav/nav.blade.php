@@ -13,12 +13,12 @@
 
         <!-- Unidades -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('unidades') }}">Unidades</a>
+          <a class="nav-link" href="#missao">Nossa missão</a>
         </li>
 
         <!-- Quem Somos -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('quem-somos') }}">Quem Somos</a>
+          <a class="nav-link" href="#cursos">Cursos</a>
         </li>
 
         <!-- Unidades com Dropdown -->
@@ -27,7 +27,8 @@
             Unidades
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUnidades">
-            <a class="nav-link" href="{{ route('quem-somos') }}">Quem Somos</a>
+            <a class="nav-link" href="{{ route('unidades') }}">Nossas unidades</a>
+
           </div>
         </li>
 
