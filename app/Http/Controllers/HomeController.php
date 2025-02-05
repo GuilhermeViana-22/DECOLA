@@ -18,7 +18,7 @@ class HomeController extends Controller
 
     public function faq()
     {
-        return view('pages.faq.faq');  // Caminho para a p�gina faq.blade.php
+        return view('pages.faq.faq');
     }
 
     public function pagamento()
@@ -28,6 +28,6 @@ class HomeController extends Controller
 
     public function privacidade()
     {
-        return view('pages.privacidade.privacidade');  // Caminho para a p�gina privacidade.blade.php
+        return view('pages.privacidade');  // Caminho para a p�gina privacidade.blade.php
     }
 }

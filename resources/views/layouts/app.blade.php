@@ -36,6 +36,7 @@
         @include('components.footer.footer') <!-- Inclui o arquivo footer.blade.php -->
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 <!-- jQuery (necessário para o Bootstrap) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

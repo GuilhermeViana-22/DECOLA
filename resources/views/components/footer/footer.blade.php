@@ -11,10 +11,11 @@
             <div class="col-md-2 mb-4 mb-md-0">
                 <h5 class="text-dark">Links Rápidos</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-muted text-decoration-none">Início</a></li>
-                    <li><a href="#" class="text-muted text-decoration-none">Cursos</a></li>
+                    <li><a href="{{ route('home') }}" class="text-muted text-decoration-none">Início</a></li>
+                    <li><a href="{{ route('home') }}" class="text-muted text-decoration-none">Cursos</a></li>
+
                     <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
-                    <li><a href="#" class="text-muted text-decoration-none">FAQ</a></li>
+                    <li><a href="{{ route('pages.faq')  }}" class="text-muted text-decoration-none">FAQ</a></li>
                     <li><a href="#" class="text-muted text-decoration-none">Contato</a></li>
                 </ul>
             </div>
@@ -57,4 +58,3 @@
 </footer>
 
 <!-- Link para Font Awesome (para ícones) -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

@@ -13,12 +13,12 @@
 
         <!-- Unidades -->
         <li class="nav-item">
-          <a class="nav-link" href="#missao">Nossa missão</a>
+          <a class="nav-link" href="{{ route('home') }}">Nossa missão</a>
         </li>
 
         <!-- Quem Somos -->
         <li class="nav-item">
-          <a class="nav-link" href="#cursos">Cursos</a>
+          <a class="nav-link" href="{{ route('home') }}">Cursos</a>
         </li>
 
         <!-- Unidades com Dropdown -->
