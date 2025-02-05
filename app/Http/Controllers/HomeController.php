@@ -7,27 +7,27 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('pages.home');  // Caminho para a página home.blade.php
+        return view('pages.home');  // Caminho para a pï¿½gina home.blade.php
     }
 
     public function about()
     {
-        return view('pages.home');  // Caminho para a página home.blade.php
+        return view('pages.home');  // Caminho para a pï¿½gina home.blade.php
     }
 
 
     public function faq()
     {
-        return view('pages.faq.faq');  // Caminho para a página faq.blade.php
+        return view('pages.faq.faq');  // Caminho para a pï¿½gina faq.blade.php
     }
 
     public function pagamento()
     {
-        return view('pages.pagamento.pagamento');  // Caminho para a página pagamento.blade.php
+        return view('pages.pagamento.pagamento');  // Caminho para a pï¿½gina pagamento.blade.php
     }
 
     public function privacidade()
     {
-        return view('pages.privacidade.privacidade');  // Caminho para a página privacidade.blade.php
+        return view('pages.privacidade.privacidade');  // Caminho para a pï¿½gina privacidade.blade.php
     }
 }

@@ -1,4 +1,5 @@
 
+
 <section class="missao py-5">
     <div class="container">
         <h2 class="missao-header text-center mb-5">
@@ -57,3 +58,15 @@
         </div>
     </div>
 </section>
+
+<!-- Cursor Gradiente -->
+<div class="cursor-gradient"></div>
+
+<!-- JS para fazer o cursor seguir o mouse -->
+<script>
+    const cursor = document.querySelector('.cursor-gradient');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.pageX - cursor.offsetWidth / 2}px`;
+        cursor.style.top = `${e.pageY - cursor.offsetHeight / 2}px`;
+    });
+</script>

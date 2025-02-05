@@ -8,17 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('arquivos/logos/7.png') }}">
     <title>DECOLA SCHOOL</title>
-    <link href="{{ asset('site/bootstrap.css') }}" rel="stylesheet">
+
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/color.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/color-four.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/color-three.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/color-two.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/prettyphoto.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/slick-slider.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=NomeDaFonte:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
@@ -34,7 +28,7 @@
 
     <!-- Main content -->
     <main>
-        @yield('content') <!-- O conteúdo das páginas específicas vai ser inserido aqui -->
+        @yield('content') <!-- O conteï¿½do das pï¿½ginas especï¿½ficas vai ser inserido aqui -->
     </main>
 
     <!-- Footer -->
@@ -43,23 +37,15 @@
     </footer>
 </body>
 
-<script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/arearestrita.js') }}"></script>
-<script src="{{ asset('js/bootstrap.js') }}"></script>
-<script src="{{ asset('js/custom.js') }}"></script>
-<script src="{{ asset('js/cep.js') }}"></script>
-<script src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/prettyphoto.js') }}"></script>
-{{-- script --}}
-<script src="{{ asset('script/fitvideo.js') }}"></script>
-<script src="{{ asset('script/functions.js') }}"></script>
-<script src="{{ asset('script/isotope.min.js') }}"></script>
-<script src="{{ asset('script/jquery.countdown.min.js') }}"></script>
-<script src="{{ asset('script/jquery.nicescroll.min.js') }}"></script>
-<script src="{{ asset('script/jquery.prettyphoto.js') }}"></script>
-<script src="{{ asset('script/modernizr.js') }}"></script>
-<script src="{{ asset('script/skills.js') }}"></script>
-<script src="{{ asset('script/slick.slider.min.js') }}"></script>
-<script src="{{ asset('script/waypoints-min.js') }}"></script>
+<!-- jQuery (necessÃ¡rio para o Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (necessÃ¡rio para o Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

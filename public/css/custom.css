@@ -1,568 +1,288 @@
-*{
+* {
+    padding: auto;
     margin: 0 auto;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Certifique-se de que a fonte est� carregada */
+    font-family: 'NomeDaFonte', sans-serif;
 }
 
-body{
+body {
     font-size: 14pt;
     overflow-x: hidden;
 }
 
-/* start - header*/
-.vm-header{
-    background-color: #262626;
-    padding: 10px;
-    text-align: center;
-    color: #ced4da;
-
-}
-/* end - header*/
-
-
-
-/* start - navbar*/
-.vm-navbar{
-    background-color: #ced4da;
-    padding: 20px;
-    text-align: center;
-    color: #262626;
+/* Tipografia para h1 a h6 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;  /* Fonte moderna e profissional */
+    font-weight: 700;  /* Negrito para destacar os títulos */
+    color: #333333;  /* Um cinza escuro para um toque mais sofisticado */
+    letter-spacing: -0.5px;  /* Leve ajuste de espaçamento entre letras para um toque mais elegante */
+    line-height: 1.2;  /* Ajuste no espaçamento entre linhas para uma leitura mais fluida */
+    transition: color 0.3s ease, transform 0.3s ease;  /* Transição suave para a cor e transformação */
 }
 
-/* end - navbar*/
-
-
-/* about */
-#vm-destaque-one{
-    background-color: #00345e;
-    color: #fff;
-}
-
-#vm-destaque-one .row {
-    display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-#vm-destaque-one .col-md-6 {
-    display: flex;
-    align-items: center; /* Alinha o conte�do da coluna ao centro */
-    justify-content: center; /* Centraliza o conte�do */
-}
-/*end about */
-
-
-/* start - Banner */
-.banner-section {
-    background-image: url('/extra-images/banner-view1-1.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: calc(100vh - 90px);
-}
-
-.banner-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: calc(100vh - 90px);
-}
-
-.form-container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-top: 200px;
-}
-
-.display-4{
-    color: #ffffff;
-    margin-top: 300px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.col-lg-6 {
-    text-align: left;
-}
-
-.col-lg-5 {
-    display: flex;
-    justify-content: flex-end;
-}
-
+/* Estilo para o h1 com destaque */
 h1 {
-    font-size: 5.5rem; /* Aumentando o tamanho do texto */
+    font-size: 2.5rem;  /* Tamanho grande para destaque */
 }
 
+/* Estilo para h2 */
 h2 {
     font-size: 2rem;
-    margin-bottom: 20px; /* Aumentando o espa�amento inferior */
 }
 
-.form-container form {
-    max-width: 500px;
-    width: 100%;
+/* Estilo para h3 */
+h3 {
+    font-size: 1.75rem;
 }
 
-.form-control {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 20px; /* Aumentando o espa�amento entre os campos do formul�rio */
+/* Estilo para h4 */
+h4 {
+    font-size: 1.5rem;
 }
 
-.btn-danger {
-    background-color: #dc3545;
-    color: white;
-    padding: 12px;
+/* Estilo para h5 */
+h5 {
+    font-size: 1.25rem;
+}
+
+/* Estilo para h6 */
+h6 {
     font-size: 1.1rem;
 }
 
-.form-container .form-control {
-    margin-bottom: 20px; /* Espa�amento entre os inputs */
+/* Hover para todos os h1 a h6 */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #e74c3c;  /* Cor vermelha vibrante no hover */
+    transform: translateY(-3px);  /* Efeito de elevação suave */
 }
 
-.form-container button {
-    background-color: #e74c3c; /* Cor vermelha */
-    border-color: #e74c3c; /* Cor vermelha na borda */
-}
-/*end -banner*/
-
-
-/*start - missao*/
-.missao {
-    background-color: #fff;
-    padding: 50px 0;
+/* Adicionando um efeito sutil de sombra ao passar o mouse */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para um toque 3D */
 }
 
-.missao-header {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.missao-card {
-    background: #fff;
-    border-radius: 12px;
+section{
     padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-.missao-card:hover {
-    transform: translateY(-5px);
+
+.top-bar {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
 }
 
-.missao-icon {
-    color: #d11a2a; /* Vermelho */
-}
-
-.missao-icon i {
-    color: inherit;
-}
-
-.missao-title {
-    font-weight: bold;
-    color: #000;
-}
-
-.missao-text {
-    color: #333;
-    flex-grow: 1;
-}
-
-/* Garante que todos os cards tenham o mesmo tamanho */
-.row .col-12 {
-    display: flex;
-}
-
-/*end - missao*/
-
-
-
-/*depoimentos*/
-
-/* Testimonial Slider */
-.wm-testimonial-slider,
-.wm-testimonial-slider-wrap,
-.wm-testimonial-slider-wrap p,
-.wm-testimonial-slider-wrap figure {
-    float: left;
-    width: 100%;
-}
-
-.wm-testimonial-slider-wrap p:before {
-    content: '';
-    position: absolute;
-    left: 70px;
-    bottom: -14px;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 14px solid;
-}
-
-.wm-testimonial-slider-wrap p {
-    font-size: 16px;
-    color: #ffffff;
-    padding: 41px 50px 46px 50px;
-    margin-bottom: 26px;
-    line-height: 30px;
-    position: relative;
-}
-
-.wm-testimonial-slider-wrap figure {
-    margin-bottom: 0px;
-    padding: 0px 38px;
-}
-
-.wm-testimonial-thumb {
-    float: left;
-    width: 77px;
-    margin: 0px 16px 0px 0px;
-}
-
-.wm-testimonial-slider {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.wm-testimonial-thumb img {
-    border-radius: 100%;
-}
-
-.wm-testimonial-slider-wrap figure figcaption {
-    padding: 12px 0px 0px 0px;
-}
-
-.wm-testimonial-slider-wrap:nth-child(even) {
-    margin: 21px 33px 0px -33px;
-}
-
-.wm-testimonial-slider-wrap:nth-child(even) p {
-    background-color: rgba(194, 76, 76, 0.8);
-}
-
-.wm-testimonial-slider-wrap:nth-child(even) figure figcaption {
-    text-align: right;
-}
-
-.wm-testimonial-slider-wrap figure figcaption h5 {
-    margin-bottom: 0px;
-    font-weight: 400;
-}
-
-.wm-testimonial-slider-wrap:nth-child(even) p:before {
-    border-top-color: #ceb591;
-    left: auto;
-    right: 70px;
-}
-
-.wm-testimonial-slider-wrap:nth-child(even) .wm-testimonial-thumb {
-    float: right;
-    margin: 0px 0px 0px 16px;
-}
-
-.wm-testimonial-slider .slick-arrow {
-    font-size: 16px;
-    top: 50%;
-    margin-top: -60px;
-}
-
-.wm-testimonial-slider .slick-arrow.slick-arrow-left {
-    left: -74px;
-}
-
-.wm-testimonial-slider .slick-arrow.slick-arrow-right {
-    right: -50px;
-}
-
-.wm-fancy-title{
-    text-align: center;
-    margin-bottom: 20px;
-}
-/*end depoimentos*/
-
-
-/*area para estiliza��o do curso */
-.curso-container{
-    background-image: url('/arquivos/imagens/banner-cursos.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: calc(100vh - 30vh);
-}
-/*area para estiliza��o do curso */
-
-
-
-
-
-
-
-
-/* area de resultados */
-/* WhyChooseus List */
-.whychooseus-list {
-    float: left;
-    width: 100%;
-    margin: 33px 0px 0px 0px;
-}
-
-.whychooseus-list ul li {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.whychooseus-list ul li span {
-    display: inline-block;
-    font-size: 60px;
-    padding-bottom: 16px;
-    border-bottom: 3px dotted #dadada;
-    margin-bottom: 17px;
-    line-height: 1;
-}
-
-.whychooseus-list p {
-    margin-bottom: 0px;
-}
-
-/* Questions Studying */
-.wm-questions-studying {
-    float: left;
-    width: 100%;
-    background-color: #ffffff;
-    border: 16px solid #ffffff;
-    border-bottom: none;
-    box-shadow: 0px 0px 0px 3px #f7f7f7 inset;
-    text-align: center;
-    padding: 95px 37px 100px 37px;
-    position: relative;
-}
-
-.wm-questions-studying img {
-    position: absolute;
-    left: 100%;
-    top: -24px;
-}
-
-.wm-questions-studying h3 {
-    margin-bottom: 21px;
-}
-
-.wm-questions-studying p {
-    margin-bottom: 52px;
-}
-
-.wm-questions-studying .wm-banner-btn {
-    padding: 9px 21px 9px;
-}
-
-/* Learn Listing */
-.wm-learn-listing,
-.wm-learn-listing figure,
-.wm-learn-listing figure>a,
-.wm-learn-listing figure img {
-    float: left;
-    width: 100%;
-}
-
-.wm-learn-listing ul li {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.wm-learn-listing figure:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.40;
-}
-
-.wm-learn-listing figcaption {
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    margin: -10px 0px 0px 0px;
-}
-
-.wm-learn-listing figcaption h2 {
-    color: #ffffff;
-    margin-bottom: 13px;
-}
-
-.wm-learn-listing figcaption .wm-banner-btn {
-    line-height: 1;
-    opacity: 0;
-}
-
-.wm-learn-listing ul li:hover figcaption .wm-banner-btn {
-    opacity: 1;
-}
-
-.wm-learn-listing ul li:hover figcaption {
-    margin-top: -40px;
-}
-
-.wm-learn-listing ul li:hover figure:before {
-    opacity: 0.90;
-}
-
-.wm-learn-listing figure {
-    margin-bottom: 0px;
-}
-
-/* Latest Event */
-.wm-simple-title {
-    float: left;
-    width: 100%;
-    font-size: 50px;
-    color: #c8c8c8;
-    margin-bottom: 42px;
-}
-
-.wm-event-latest-slider {
-    position: relative;
-}
-
-.wm-event-latest-slider,
-.wm-event-latest-layer {
-    float: left;
-    width: 100%;
-}
-
-.wm-event-latest-slider {
-    padding-bottom: 40px;
-}
-
-.wm-event-latest-layer {
-    padding-bottom: 50px;
-    border-bottom: 2px solid #eeeeee;
-}
-
-.wm-event-latest-slider h6 {
-    margin-bottom: 21px;
-    line-height: 30px;
-}
-
-.wm-event-latest-slider .wm-banner-btn {
-    padding: 9px 26px 10px 26px;
-}
-
-.wm-event-latest-slider .slick-arrow {
-    font-size: 16px;
-    color: #262626;
-    top: auto;
-    bottom: 0px;
-}
-
-.wm-event-latest-slider .slick-arrow.slick-arrow-left {
-    left: 50%;
-    margin-left: -22px;
-}
-
-.wm-event-latest-slider .slick-arrow.slick-arrow-right {
-    right: 50%;
-    margin-right: -26px;
-    bottom: 1px;
-}
-
-/* final da area de resultados */
-
-
-/* newsllet*/
-.newsletter-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    margin-top: -20px;
+#vm-destaque-one{
     background-color: #00345e;
 }
 
-.newsletter-box {
-    max-width: 500px;
-    text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
+.navbar-brand {
+    margin-left: 0 !important;
+    margin-left: 15% !important;
 }
 
+/* Remove o campo de pesquisa */
+.form-inline {
+    display: none;
+}
+
+/* Altera a cor do botão para vermelho */
+.btn-outline-success {
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+.btn-outline-success:hover {
+    background-color: darkred !important;
+    border-color: darkred !important;
+}
+
+/* Estilo para h2 e h3 com gradiente e efeitos */
+.missao-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #ff6a00, #ff3f34, #ff7f50);
+    background-clip: text;
+    color: transparent;
+    transition: background 0.3s ease;
+}
+
+.missao-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    background: linear-gradient(45deg, #000f1c, #4050ff);
+    background-clip: text;
+    color: transparent;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.missao-title:hover {
+    transform: scale(1.1);  /* Efeito de aumentar o título no hover */
+}
+
+/* Cards otimizados com sombra suave e animação */
+.missao-card {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    width: 400px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.missao-card:hover {
+    transform: translateY(-5px);  /* Efeito de elevação do card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Sombra mais intensa no hover */
+}
+
+.missao-icon {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.missao-icon:hover {
+    transform: scale(1.2);  /* Efeito de ampliação do ícone */
+}
+
+
+.missao-header {
+    background: linear-gradient(45deg, #ff6a00, #ff3f34, #ff7f50);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 3s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradient {
+    0% {
+        background-position: 200% 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
+.cursor-gradient {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    transition: background 0.3s ease;
+    background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
+    background-size: 200% 200%;
+}
+
+
+
+
+
+
+
+/* Estilo para a seção da newsletter */
+.newsletter-section {
+    background-color: #00345e;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90;
+
+}
+
+.newsletter-box {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 90;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+    background-color: #ffffff;
+
+}
+
+/* Título e descrição */
 .newsletter-box h2 {
-    color: #dc3545;
-    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
+    background-clip: text;
+    color: transparent;
+    animation: gradient 3s ease infinite;
 }
 
 .newsletter-box p {
-    color: #6c757d;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #000000;
 }
 
-.newsletter-box .form-label {
-    font-weight: bold;
-    color: #343a40;
+@keyframes gradient {
+    0% {
+        background-position: 200% 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 200% 0;
+    }
 }
 
-.newsletter-box .form-control {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ced4da;
+/* Formulário */
+.form-control {
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #ff0400;
+    background-color: #fff;
 }
 
-.btn-newsletter {
-    background-color: #dc3545;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
+.form-control:focus {
+    border-color: #ff0400;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.7);
+}
+
+button.btn-newsletter {
+    background-color: #ff0400;
     border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.btn-newsletter:hover {
-    background-color: #b02a37;
-}
-/* end news*/
-
-
-
-
-/*start fotter section*/
-.footer {
-    background-color: #ffffff;
-    padding: 40px 0;
+button.btn-newsletter:hover {
+    background-color: #ff0400;
+    transform: translateY(-5px);  /* Efeito de elevação do botão */
 }
 
-.footer .social-icons a {
-    font-size: 20px;
-    color: #333;
-    margin-right: 15px;
-    transition: color 0.3s ease;
+button.btn-newsletter:focus {
+    outline: none;
 }
 
-.footer .social-icons a:hover {
-    color: #007bff;
+/* Efeito de hover no ícone e botão */
+.newsletter-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-.footer .instructor-avatar {
-    width: 50px; /* Ajuste o tamanho conforme necess�rio */
-    height: 50px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-}
-
-/*end footer section*/
