@@ -24,7 +24,7 @@
             <div class="col-md-3 mb-4 mb-md-0">
                 <h5 class="text-dark">Quem São os Professores?</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-muted text-decoration-none">Professores Qualificados</a></li>
+                    <li><a href="{{ route('instrutores') }}" class="text-muted text-decoration-none">Professores Qualificados</a></li>
                     <li><a href="#" class="text-muted text-decoration-none">Metodologia</a></li>
                     <li><a href="#" class="text-muted text-decoration-none">Depoimentos</a></li>
                 </ul>

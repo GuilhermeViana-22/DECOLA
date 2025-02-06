@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('pages.privacidade');  // Caminho para a p�gina privacidade.blade.php
     }
+
+
+    public function instrutores(){
+        return view('pages.instrutores.instrutores');  // Caminho para a p�gina privacidade.blade.php
+    }
 }

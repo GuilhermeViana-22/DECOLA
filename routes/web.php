@@ -22,6 +22,7 @@ Route::prefix('pages')->group(function () {
 Route::get('/unidades', [UnidadeController::class, 'index'])->name('unidades');
 
 Route::get('/quem-somos', [HomeController::class, 'quemSomos'])->name('quem-somos');
+Route::get('/instrutores', [HomeController::class, 'instrutores'])->name('instrutores');
 
 // Rota para o portal do Fiqueado
 Route::prefix('portal-do-franqueado')->group(function () {
