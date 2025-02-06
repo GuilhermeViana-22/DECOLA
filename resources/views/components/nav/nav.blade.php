@@ -21,6 +21,11 @@
           <a id="cursos" class="nav-link" href="{{ route('home') }}">Cursos</a>
         </li>
 
+        <li class="nav-item">
+            <a id="cursos" class="nav-link" href="{{ route('instrutores') }}">Instrutores</a>
+          </li>
+
+
         <!-- Unidades com Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUnidades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

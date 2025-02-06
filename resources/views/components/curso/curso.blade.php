@@ -1,6 +1,6 @@
 <section id="cursos" class="curso-container py-5" style="background-color: #f8f9fa;">
     <div class="container">
-        <h2 class="text-center mb-5 text-dark">Principais cursos</h2>
+        <h2 class="section-title">Principais cursos</h2>
         <div class="row justify-content-center">
             <!-- Card de Curso -->
             <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4">

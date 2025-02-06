@@ -112,6 +112,13 @@ section{
     padding: 8px 0;
 }
 
+
+  .pipe {
+    color: white;
+    font-weight: bold;
+  }
+
+
 #vm-destaque-one{
     background-color: #00345e;
     margin-top: -26px;
@@ -517,7 +524,74 @@ button.btn-newsletter:focus {
 }
 
 
-/* professor */
+/* resultados */
+.why-choose-us {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+  }
+
+  .section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #002f6c; /* Cor azul Wizard */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .stat-box {
+    background: linear-gradient(135deg, #002f6c 0%, #0056b3 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .stat-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .percentage {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .stat-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .faq-section {
+    margin-top: 40px;
+  }
+
+  .faq-title {
+    font-size: 36px;
+    color: #002f6c;
+    font-weight: 700;
+  }
+
+  .faq-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    background-color: #e63946;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #d62839;
+  }
 
 
-/* end professor */
+/* end resultados */
