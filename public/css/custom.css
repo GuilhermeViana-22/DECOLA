@@ -595,3 +595,14 @@ button.btn-newsletter:focus {
 
 
 /* end resultados */
+
+.logo-pagamento {
+
+    display: flex;
+    flex-direction: row;
+    object-fit: cover; /* Isso faz a imagem preencher o espaço sem distorcer */
+    padding: 2px;
+
+
+
+}
