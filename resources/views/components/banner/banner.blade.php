@@ -47,3 +47,5 @@
         </div>
     </div>
 </section>
+
+<span><a target="_blank" href="https://api.whatsapp.com/send?phone=5511954509504" id="whatsapp-button"><i id="whatsapp" class="fab fa-whatsapp animate__animated animate__jello"></i></a></span>

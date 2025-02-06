@@ -2,6 +2,7 @@
     padding: auto;
     margin: 0 auto;
     font-family: 'NomeDaFonte', sans-serif;
+
 }
 
 body {
@@ -62,8 +63,47 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 
 section{
     padding: 20px;
+
 }
 
+.banner{
+    background:url('/arquivos/banner/2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+
+    margin-bottom: 0;
+}
+
+.banner-form{
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 15%;
+}
+.banner-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+    color: #f6f6f6;  /* Cor base do texto */
+    transition: all 0.3s ease;  /* Transição suave para todos os efeitos */
+}
+
+.banner-title:hover {
+    color: #fff;  /* Cor clara no hover */
+    transform: translateY(-3px);  /* Efeito de elevação suave */
+    text-shadow: 0 2px 5px rgb(255, 255, 255);  /* Efeito de brilho sutil */
+}
+
+.banner-text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+}
 
 .top-bar {
     background-color: #1a1a1a;
@@ -74,6 +114,7 @@ section{
 
 #vm-destaque-one{
     background-color: #00345e;
+    margin-top: -26px;
 }
 i{
     color: white;
@@ -174,6 +215,65 @@ i{
     }
 }
 
+/* Estilo para o curso */
+.price{
+
+    font-weight: bold !important;
+}
+
+.curso-card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: scale(1.05);
+}
+
+.curso-card:hover::after {
+    content: "Melhor somente hoje!";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.curso-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.curso-card .ratings {
+    display: flex;
+}
+
+.curso-card .students {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.curso-card .price {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.curso-card .badge {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+btn-primary{
+    border-radius: 0% !important;
+}
+/* Estilo para o curso */
+
 
 .cursor-gradient {
     position: absolute;
@@ -187,8 +287,81 @@ i{
 }
 
 
+/* Estilo para o título */
+.depoimentos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ff4c4c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+/* Estilo para os depoimentos */
+.depoimento-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #fff;
+    padding: 15px;
+}
 
+/* Estilo para as estrelas */
+.stars {
+    font-size: 1.5rem;
+}
+
+.star {
+    color: #ff4c4c;
+}
+
+/* Ajuste da imagem do usuário */
+.depoimentos img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #ff4c4c;
+}
+
+/* Nome do usuário */
+.depoimentos p.mb-0 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Estilo para os cards dos depoimentos */
+.card-depoimentos {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o carrossel */
+.carousel-inner {
+    padding: 20px 0;
+}
+
+/* Adaptação responsiva */
+@media (max-width: 768px) {
+    .depoimentos h2 {
+        font-size: 2rem;
+    }
+
+    .depoimento-text {
+        font-size: 1rem;
+    }
+
+    .depoimentos img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .stars {
+        font-size: 1.2rem;
+    }
+}
 
 
 
@@ -287,4 +460,58 @@ button.btn-newsletter:focus {
 .newsletter-box:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    z-index: 99;
+    background: #7e31ff;
+    background: linear-gradient(to right, #ff3131, #ff6b6b);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    animation: effect 5s infinite ease-in;
+    margin-top: 160px;
+}
+
+#whatsapp-button:hover {
+    background: #690eff;
+    background: linear-gradient(to right, #ff0202, #ff6b6b);
+    color: white;
+
+}
+
+/*parte dos franqueados*/
+.banner-franqueado{
+    background:url('/arquivos/banner/3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.banner-suporte{
+    background:url('/arquivos/banner/3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
 }

@@ -8,17 +8,10 @@
                     <div class="row text-center text-white">
                         <!-- Depoimento e Avaliação -->
                         <div class="col-md-8 offset-md-2">
-                            <div class="card shadow-lg bg-dark text-white border-0">
-                                <div class="card-body">
+                            <div class="card-depoimentos shadow-lg bg-dark text-white border-0">
+                                <div class="card-depoimentos-body">
                                     <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas de Avaliação -->
-                                        <div class="stars" style="color: #ff4c4c;">
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                        </div>
+                                    
                                     </div>
                                     <p class="depoimento-text" style="font-style: italic;">"A Decola School me ajudou a desenvolver habilidades essenciais para a vida profissional. As aulas são práticas e interativas, o que me fez crescer muito na minha carreira!"</p>
                                     <div class="d-flex justify-content-center mt-4">
@@ -26,6 +19,14 @@
                                             <img src="{{ asset('arquivos/user/user2.jpeg')}}" alt="Foto de Usuário" class="img-fluid rounded-circle" style="width: 50px; height: 50px; border: 3px solid #ff4c4c;">
                                             <div class="ms-3">
                                                 <p class="mb-0" style="font-weight: bold;">Lucas Silva</p>
+                                                    <!-- Estrelas de Avaliação -->
+                                        <div class="stars" style="color: #ff4c4c;">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9734;</span>
+                                        </div>
                                                 <p class="mb-0" style="font-size: 0.85rem;">Aluno de Soft Skills</p>
                                             </div>
                                         </div>
@@ -40,17 +41,10 @@
                     <div class="row text-center text-white">
                         <!-- Depoimento e Avaliação -->
                         <div class="col-md-8 offset-md-2">
-                            <div class="card shadow-lg bg-dark text-white border-0">
-                                <div class="card-body">
+                            <div class="card-depoimentos shadow-lg bg-dark text-white border-0">
+                                <div class="card-depoimentos-body">
                                     <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas de Avaliação -->
-                                        <div class="stars" style="color: #ff4c4c;">
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9734;</span>
-                                        </div>
+
                                     </div>
                                     <p class="depoimento-text" style="font-style: italic;">"As aulas de soft skills da Decola School me ajudaram a melhorar minhas habilidades de liderança e comunicação. Sou mais confiante em reuniões e apresentações!"</p>
                                     <div class="d-flex justify-content-center mt-4">
@@ -58,6 +52,14 @@
                                             <img src="{{ asset('arquivos/user/user2.jpeg')}}" alt="Foto de Usuário" class="img-fluid rounded-circle" style="width: 50px; height: 50px; border: 3px solid #ff4c4c;">
                                             <div class="ms-3">
                                                 <p class="mb-0" style="font-weight: bold;">Fernanda Oliveira</p>
+                                                    <!-- Estrelas de Avaliação -->
+                                        <div class="stars" style="color: #ff4c4c;">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9734;</span>
+                                        </div>
                                                 <p class="mb-0" style="font-size: 0.85rem;">Aluno de Soft Skills</p>
                                             </div>
                                         </div>
@@ -72,17 +74,10 @@
                     <div class="row text-center text-white">
                         <!-- Depoimento e Avaliação -->
                         <div class="col-md-8 offset-md-2">
-                            <div class="card shadow-lg bg-dark text-white border-0">
-                                <div class="card-body">
+                            <div class="card-depoimentos shadow-lg bg-dark text-white border-0">
+                                <div class="card-depoimentos-body">
                                     <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas de Avaliação -->
-                                        <div class="stars" style="color: #ff4c4c;">
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9733;</span>
-                                            <span class="star">&#9734;</span>
-                                            <span class="star">&#9734;</span>
-                                        </div>
+
                                     </div>
                                     <p class="depoimento-text" style="font-style: italic;">"Eu aprendi muito na Decola School, especialmente sobre inteligência emocional e como lidar com situações desafiadoras. Isso me ajudou no meu crescimento pessoal e profissional!"</p>
                                     <div class="d-flex justify-content-center mt-4">
@@ -90,6 +85,14 @@
                                             <img src="{{ asset('arquivos/user/user2.jpeg')}}" alt="Foto de Usuário" class="img-fluid rounded-circle" style="width: 50px; height: 50px; border: 3px solid #ff4c4c;">
                                             <div class="ms-3">
                                                 <p class="mb-0" style="font-weight: bold;">João Pereira</p>
+                                                       <!-- Estrelas de Avaliação -->
+                                        <div class="stars" style="color: #f60808;">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9734;</span>
+                                            <span class="star">&#9734;</span>
+                                        </div>
                                                 <p class="mb-0" style="font-size: 0.85rem;">Aluno de Soft Skills</p>
                                             </div>
                                         </div>

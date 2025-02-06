@@ -18,7 +18,7 @@
 
         <!-- Quem Somos -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('home') }}">Cursos</a>
+          <a id="cursos" class="nav-link" href="{{ route('home') }}">Cursos</a>
         </li>
 
         <!-- Unidades com Dropdown -->
@@ -38,15 +38,17 @@
             Portal do Fiqueado
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownFiqueado">
-            <a class="dropdown-item" href="{{ route('fiqueado.login') }}">Acessar</a>
-            <a class="dropdown-item" href="{{ route('fiqueado.suporte') }}">Suporte</a>
+            <a class="dropdown-item" href="{{ route('portal-do-franqueado') }}">Acessar</a>
+            <a class="dropdown-item" href="{{ route('portal-do-franqueado.suporte') }}">Suporte</a>
           </div>
         </li>
 
         <!-- Botão Fazer Matrícula -->
         <li class="nav-item">
-          <a class="btn btn-danger my-2 my-sm-0" href="{{ route('matricula') }}" role="button">Fazer Matrícula</a>
+          <a class="btn btn-danger my-2 my-sm-0" href="https://decola.eadplataforma.app/register" role="button">Fazer Matrícula</a>
         </li>
       </ul>
     </div>
 </nav>
+
+
