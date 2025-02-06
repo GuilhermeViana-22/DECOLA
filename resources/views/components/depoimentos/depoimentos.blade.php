@@ -11,7 +11,7 @@
                             <div class="card-depoimentos shadow-lg bg-dark text-white border-0">
                                 <div class="card-depoimentos-body">
                                     <div class="d-flex justify-content-center mb-3">
-                                    
+
                                     </div>
                                     <p class="depoimento-text" style="font-style: italic;">"A Decola School me ajudou a desenvolver habilidades essenciais para a vida profissional. As aulas são práticas e interativas, o que me fez crescer muito na minha carreira!"</p>
                                     <div class="d-flex justify-content-center mt-4">
@@ -115,4 +115,11 @@
         </div>
     </div>
 </section>
+
+
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00345e" fill-opacity="1" d="M0,96L1440,0L1440,0L0,0Z"></path></svg>
+
+
+<!-- Incluir o componente do foguete -->
+  @include('elements.rocket')
