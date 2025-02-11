@@ -4,7 +4,7 @@
     padding: 0;
 
 }
-
+/* Hello my friend */
 body {
     max-width: 100%;
     color: #424242;
@@ -1135,7 +1135,7 @@ address {
 }
 
 .missao-icon {
-    flex-shrink: 0; /* Impede que o ícone diminua */
+    flex-shrink: 0; /* Impede que o ï¿½cone diminua */
 }
 
 .missao-title {
@@ -1156,18 +1156,18 @@ address {
 
 
 
-/*area para estilização do curso */
+/*area para estilizaï¿½ï¿½o do curso */
 .curso-container{
     background-image: url('/arquivos/imagens/banner-cursos.jpg');
     background-size: cover;
     background-position: center;
     min-height: calc(100vh - 30vh);
 }
-/*area para estilização do curso */
+/*area para estilizaï¿½ï¿½o do curso */
 
 
 
-/* Container da seção */
+/* Container da seï¿½ï¿½o */
 .newsletter-container {
     background-color: #012A4A;
     color: #fff;
@@ -1175,20 +1175,20 @@ address {
     text-align: center;
 }
 
-/* Título da newsletter */
+/* Tï¿½tulo da newsletter */
 .newsletter-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Subtítulo */
+/* Subtï¿½tulo */
 .newsletter-subtitle {
     font-size: 1rem;
     margin-bottom: 20px;
 }
 
-/* Formulário */
+/* Formulï¿½rio */
 .newsletter-form {
     max-width: 500px;
     margin: 0 auto;
@@ -1204,7 +1204,7 @@ address {
     outline: none;
 }
 
-/* Botão de envio */
+/* Botï¿½o de envio */
 .newsletter-form .btn {
     background-color: #E63946;
     color: #fff;
@@ -1219,18 +1219,18 @@ address {
     transition: 0.3s;
 }
 
-/* Ícone do botão */
+/* ï¿½cone do botï¿½o */
 .newsletter-form .btn i {
     transition: transform 0.3s;
 }
 
-/* Efeito hover no botão */
+/* Efeito hover no botï¿½o */
 .newsletter-form .btn:hover {
     background-color: #D62839;
     box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
 }
 
-/* Animação do ícone no hover */
+/* Animaï¿½ï¿½o do ï¿½cone no hover */
 .newsletter-form .btn:hover i {
     transform: translateX(5px);
 }
@@ -1251,7 +1251,7 @@ address {
     }
 }
 
-/*area para disponibilização de estilização de newsletter*/
+/*area para disponibilizaï¿½ï¿½o de estilizaï¿½ï¿½o de newsletter*/
 
 .wm-caption-two {
     position: absolute;
@@ -5305,7 +5305,7 @@ ul li:hover .wm-ctservice-icon {
     padding: 20px;
 }
 
-/* Estilos Padrão para os Cards */
+/* Estilos Padrï¿½o para os Cards */
 .testemunho-card {
     max-width: 400px;
     padding: 20px;
@@ -5330,7 +5330,7 @@ ul li:hover .wm-ctservice-icon {
     background: linear-gradient(135deg, #de3a3a, #b21f1f);
 }
 
-/* Estilização das imagens e legendas */
+/* Estilizaï¿½ï¿½o das imagens e legendas */
 .testemunho-card figure {
     margin: 15px 0;
 }
