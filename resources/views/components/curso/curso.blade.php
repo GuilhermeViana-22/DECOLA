@@ -43,7 +43,7 @@
                         <!-- Chamada para ação -->
 
                     </div>
-                    <a href="#" class="btn btn-primary w-100 py-3 text-white fs-5 fw-bold">Adquirir Agora</a>
+                    <a href=" {{ route('pages.checkout')}}" class="btn btn-primary w-100 py-3 text-white fs-5 fw-bold">Adquirir Agora</a>
                 </div>
             </div>
             <!-- Fim do Card -->

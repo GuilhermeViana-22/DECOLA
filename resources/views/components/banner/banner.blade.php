@@ -55,10 +55,7 @@
                   <option value="meu-filho">Para meu filho(a)</option>
                 </select>
               </div>
-              <div class="mb-3">
-                <label for="language" class="form-label">Idioma</label>
-                <input type="text" class="form-control" id="language" placeholder="Digite o idioma" required>
-              </div>
+
               <div class="mb-3">
                 <label for="age-group" class="form-label">Qual a faixa etária?</label>
                 <select class="form-select" id="age-group" required>
@@ -91,7 +88,7 @@
                 <input type="checkbox" class="form-check-input" id="terms-check" required>
                 <label class="form-check-label" for="terms-check">Li e aceito os <a href="#" target="_blank">termos e condições</a></label>
               </div>
-              <button type="submit" class="btn btn-dangeralwd w-100">Enviar</button>
+              <button type="submit" class="btn btn-danger w-100">Enviar</button>
             </form>
           </div>
         </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UnidadeController;
@@ -16,11 +17,11 @@ Route::prefix('pages')->group(function () {
     Route::get('/privacidade', [HomeController::class, 'privacidade'])->name('pages.privacidade');
     Route::get('/about', [HomeController::class, 'about'])->name('pages.about');
     Route::get('/politica-reembolsos', [HomeController::class, 'pages.politicaReembolsos'])->name('pages.politicaReembolsos');
+    Route::get('/checkout', [HomeController::class, 'checkout'])->name('pages.checkout');
 });
 
 // Rota para unidades, quem somos, e matrícula
 Route::get('/unidades', [UnidadeController::class, 'index'])->name('unidades');
-
 Route::get('/quem-somos', [HomeController::class, 'quemSomos'])->name('quem-somos');
 Route::get('/instrutores', [HomeController::class, 'instrutores'])->name('instrutores');
 
@@ -32,3 +33,7 @@ Route::prefix('portal-do-franqueado')->group(function () {
 
 // Rota para matrícula
 Route::get('/matricula', [MatriculaController::class, 'create'])->name('matricula');
+
+
+// Rota para blog
+Route::get('/blog', [BlogController::class, 'index'])->name('pages.blog');

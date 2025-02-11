@@ -82,6 +82,12 @@ section{
 
 }
 
+.btn-success{
+    border-radius: 0% !important;
+}
+
+
+
 .banner{
     background:url('/arquivos/banner/2.png');
     background-position: center center;
@@ -636,7 +642,6 @@ button.btn-newsletter:focus {
     padding: 12px 30px;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 8px;
     transition: background-color 0.3s;
   }
 
@@ -644,16 +649,300 @@ button.btn-newsletter:focus {
     background-color: #d62839;
   }
 
-
 /* end resultados */
 
 .logo-pagamento {
-
     display: flex;
     flex-direction: row;
     object-fit: cover; /* Isso faz a imagem preencher o espaço sem distorcer */
     padding: 2px;
+}
+
+
+/*parte de checkout de pagamento do curso */
+
+.checkout-title {
+    text-align: left;
+}
+
+.checkout-description {
+    text-align: left;
+}
+
+.checkout-card-body {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.checkout-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkout-item {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkout-item .checkout-icon {
+    margin-right: 10px;
+}
+
+.checkout-card-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .checkout-section {
+        margin-top: 20px;
+    }
+}
 
 
 
+.checkout-section{
+    background-color: #00345e;
+    color: #f1f1f1;
+
+}
+
+.checkout-title{
+    font-size: 25pt;
+}
+
+.checkout-description{
+    font-size: 16pt;
+}
+
+.checkout-card-wrapper{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.descricao-checkout{
+    margin-top: 20vh !important;
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    height: 10px; /* Define a altura da linha */
+    background-color: #ffffff !important; /* Cor da linha */
+}
+
+
+.row-custom {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.column-custom {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.column-custom h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.column-custom p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.footer-custom {
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .row-custom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.flexibilidade-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flexibilidade-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    background-color: #000000;
+}
+
+.flexibilidade-header h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.flexibilidade-content {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.flexibilidade-content ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.flexibilidade-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+#dropdown-icon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.open #dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.modulos-curso-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modulos-curso-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.modulos-curso-header h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modulos-curso-content {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.modulos-curso-content ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.modulos-curso-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+#modulos-dropdown-icon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.open #modulos-dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/*  inicio do card de  competencias */
+.competencias-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+}
+
+.competencias-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #bb2d3b;
+}
+
+.competencias-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.competencias-icon {
+    font-size: 24px;
+    color: #bb2d3b;
+    margin-bottom: 10px;
+}
+
+.competencias-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.competencias-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.competencias-footer {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #bb2d3b;
+}
+
+/* final do card de competencias */
+
+
+.desempenho-container {
+    width: 80%; /* Define a largura da div em % */
+    height: 300px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; /* Mantém a flexibilidade */
+}
+
+.desempenho-img {
+    max-width:  100vh;
+    height: auto;
 }
