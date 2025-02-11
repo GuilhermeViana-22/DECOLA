@@ -20,7 +20,7 @@
 
                 <!-- Coluna com informações do curso -->
                     <div class="col-lg-4 col-md-12">
-    <div class="checkout-card shadow-lg border-0 rounded-4 bg-white text-dark p-3">
+    <div class="checkout-card shadow-lg border-0 p-1 bg-white text-dark">
         <!-- Vídeo no header do card -->
         <div class="checkout-card-header">
             <video src="{{ asset('arquivos/videos/curso_video_exemplo.mp4') }}" autoplay loop muted class="video-header rounded-3" alt="Curso Soft-skills"></video>
