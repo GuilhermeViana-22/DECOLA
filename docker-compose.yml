@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  decola:
+    image: decola
+    build:
+      context: vendor/facade/ignition
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
