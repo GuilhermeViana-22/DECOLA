@@ -2,8 +2,24 @@
     padding: auto;
     margin: 0 auto;
     font-family: 'NomeDaFonte', sans-serif;
-
 }
+/* Controla a largura do scroll */
+::-webkit-scrollbar {
+    width: 8px; /* Ajuste a largura conforme necessário */
+  }
+
+  /* Controla o estilo da parte do scroll que pode ser arrastada */
+  ::-webkit-scrollbar-thumb {
+    background-color: #1e2a47; /* Azul escuro */
+    border-radius: 10px; /* Arredonda as bordas do scroll */
+  }
+
+  /* Controla o estilo da trilha do scroll (área de fundo) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo do track */
+    border-radius: 10px;
+  }
+
 
 body {
     font-size: 14pt;
@@ -471,6 +487,41 @@ button.btn-newsletter:focus {
 
 
 
+
+
+#rocketIcon{
+    position: fixed;
+    bottom: 200px;
+    right: 15px;
+    z-index: 99;
+    background: #7e31ff;
+    background: linear-gradient(to right, #ff3131, #ff6b6b);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    animation: effect 5s infinite ease-in;
+    margin-top: 160px;
+}
+
+#rocketIcon:hover {
+    background: #690eff;
+    background: linear-gradient(to right, #ff0202, #ff6b6b);
+    color: white;
+
+}
+
+
+
 #whatsapp-button {
     position: fixed;
     bottom: 100px;
@@ -595,3 +646,14 @@ button.btn-newsletter:focus {
 
 
 /* end resultados */
+
+.logo-pagamento {
+
+    display: flex;
+    flex-direction: row;
+    object-fit: cover; /* Isso faz a imagem preencher o espaço sem distorcer */
+    padding: 2px;
+
+
+
+}
