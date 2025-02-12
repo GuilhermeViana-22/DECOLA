@@ -7,6 +7,13 @@ use App\Http\Controllers\UnidadeController;
 use App\Http\Controllers\FranqueadoController;
 use App\Http\Controllers\MatriculaController;
 
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 // Rota para a página home sem prefixo
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -37,3 +44,4 @@ Route::get('/matricula', [MatriculaController::class, 'create'])->name('matricul
 
 // Rota para blog
 Route::get('/blog', [BlogController::class, 'index'])->name('pages.blog');
+

@@ -1,42 +1,28 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
-        return view('pages.home');  // Caminho para a p�gina home.blade.php
-    }
-
-    public function about()
-    {
-        return view('pages.home');  // Caminho para a p�gina home.blade.php
-    }
-
-
-    public function faq()
-    {
-        return view('pages.faq.faq');
-    }
-
-    public function pagamento()
-    {
-        return view('pages.pagamento.pagamento');  // Caminho para a p�gina pagamento.blade.php
-    }
-
-    public function privacidade()
-    {
-        return view('pages.privacidade');  // Caminho para a p�gina privacidade.blade.php
-    }
-
-
-    public function instrutores(){
-        return view('pages.instrutores.instrutores');  // Caminho para a p�gina privacidade.blade.php
-    }
-
-    public function checkout(){
-        return view('pages.checkout.index');  // Caminho para a p�gina privacidade.blade.php
+        return view('home');
     }
 }
