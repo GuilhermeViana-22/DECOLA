@@ -45,6 +45,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownFiqueado">
             <a class="dropdown-item" href="{{ route('portal-do-franqueado') }}">Acessar</a>
             <a class="dropdown-item" href="{{ route('portal-do-franqueado.suporte') }}">Suporte</a>
+            <a class="dropdown-item" href="{{ url('/dashboard') }}">Dashboard</a>
           </div>
         </li>
 
