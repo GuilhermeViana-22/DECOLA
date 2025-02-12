@@ -41,6 +41,7 @@ Route::get('/blog', [BlogController::class, 'index'])->name('pages.blog');
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
+    
 });
 
 

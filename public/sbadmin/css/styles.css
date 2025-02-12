@@ -3791,9 +3791,26 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
+
+
+.navbar-itens {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: 20px;
+  
+    color: #909294;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .navbar-itens:hover, .navbar-itens:focus {
+    color: var(--bs-navbar-brand-hover-color);
+  }
+
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
