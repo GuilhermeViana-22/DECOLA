@@ -33,10 +33,14 @@ class HomeController extends Controller
 
 
     public function instrutores(){
-        return view('pages.instrutores.instrutores');  // Caminho para a p�gina privacidade.blade.php
+        return view('pages.instrutores.instrutores');
     }
 
     public function checkout(){
-        return view('pages.checkout.index');  // Caminho para a p�gina privacidade.blade.php
+        return view('pages.checkout.index');
+    }
+
+    public function certificados(){
+        return view('pages.certificado.certificado');
     }
 }

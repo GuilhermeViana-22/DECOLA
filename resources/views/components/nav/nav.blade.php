@@ -17,8 +17,12 @@
         </li>
 
         <!-- Quem Somos -->
-        <li class="nav-item">
-          <a id="cursos" class="nav-link" href="{{ route('home') }}">Cursos</a>
+        <li class="nav-item dropdown">
+          <a id="cursos" class="nav-link dropdown-toggle" id="cursoDrop" role="button" data-toggle="dropdown"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="{{ route('home') }}">Cursos</a>
+          <div class="dropdown-menu" aria-labelledby="cursoDrop">
+            <a class="dropdown-item" href="{{ route('home') }}">Cursos disponíveis</a>
+            <a class="dropdown-item" href="{{ route('pages.certificados') }}">Certificados</a>
+          </div>
         </li>
 
         <li class="nav-item">

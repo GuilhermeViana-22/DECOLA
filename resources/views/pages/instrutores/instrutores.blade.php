@@ -9,8 +9,10 @@
                 <h1 class="text-dark fw-bold">Nossos Instrutores</h1>
                 <p class=" text-dark fs-5">Conheça os profissionais que fazem parte do time da Decola School.</p>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid" style="max-height: 200px;">
+            <div class="col-lg-6 text-center position-relative">
+                <div class="rocket-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid rocket-icon">
+                </div>
             </div>
         </div>
     </div>
