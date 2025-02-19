@@ -68,7 +68,7 @@ h6 {
 
 /* Hover para todos os h1 a h6 */
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-    color: #e74c3c;  /* Cor vermelha vibrante no hover */
+
     transform: translateY(-3px);  /* Efeito de elevaÃ§Ã£o suave */
 }
 
@@ -206,77 +206,90 @@ i{
 }
 
 /* Estilo para h2 e h3 com gradiente e efeitos */
-.missao-header {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-    background: linear-gradient(45deg, #ff6a00, #ff3f34, #ff7f50);
-    background-clip: text;
-    color: transparent;
-    transition: background 0.3s ease;
-}
 
-.missao-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    background: linear-gradient(45deg, #000f1c, #4050ff);
-    background-clip: text;
-    color: transparent;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
 
 .missao-title:hover {
     transform: scale(1.1);  /* Efeito de aumentar o tÃ­tulo no hover */
 }
+/* Estilo para os ícones */
+.missao-icon i {
+    font-size: 2.5rem; /* Aumenta o tamanho dos ícones */
+    color: #002f6c; /* Cor azul Wizard */
+    transition: transform 0.3s ease; /* Efeito de transição */
+}
 
-/* Cards otimizados com sombra suave e animaÃ§Ã£o */
-.missao-card {
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    padding: 20px;
-    width: 400px;
+/* Efeito de hover para os ícones */
+.missao-icon i:hover {
+    transform: scale(1.2); /* Aumenta um pouco o ícone no hover */
+}
+
+/* Alinhamento e estilo do título */
+.missao-title {
+    font-size: 2rem; /* Aumenta o tamanho do título */
     font-weight: bold;
-    color: #333333;
+    margin-top: 1rem;
+    color: #00345e; /* Cor do título */
 }
 
+/* Estilo para o texto do card */
+.missao-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Cor do texto */
+    margin-top: 1rem;
+}
+
+/* Estilo dos cards */
+.missao-card {
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+    height: 100%;
+}
+
+/* Efeito de hover nos cards */
 .missao-card:hover {
-    transform: translateY(-5px);  /* Efeito de elevaÃ§Ã£o do card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Sombra mais intensa no hover */
+    transform: translateY(-10px); /* Eleva o card no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
 }
 
-.missao-icon {
-    font-size: 2.5rem;
-    transition: transform 0.3s ease;
-}
-
-.missao-icon:hover {
-    transform: scale(1.2);  /* Efeito de ampliaÃ§Ã£o do Ã­cone */
-}
-
-
-.missao-header {
-    background: linear-gradient(45deg, #ff6a00, #ff3f34, #ff7f50);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradient 3s ease infinite;
-}
-
-/* AnimaÃ§Ã£o do gradiente */
-@keyframes gradient {
-    0% {
-        background-position: 200% 0;
-    }
-    50% {
-        background-position: 0 100%;
-    }
-    100% {
-        background-position: 200% 0;
+/* Layout do grid para duas colunas */
+@media (max-width: 576px) {
+    .col-12 {
+        width: 100%; /* Coloca os cards em uma única coluna em telas pequenas */
     }
 }
+
+/* Estilo de fundo e espaçamento */
+.missao-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ajuste do grid para desktop e mobile */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-sm-6 {
+    max-width: 50%; /* Dois cards por linha */
+    padding: 0 1rem; /* Espaçamento entre os cards */
+}
+
+.col-md-6 {
+    max-width: 50%;
+}
+
+.col-lg-3 {
+    max-width: 25%; /* Três cards por linha em telas maiores */
+}
+
 
 /* Estilo para o curso */
 .price{
