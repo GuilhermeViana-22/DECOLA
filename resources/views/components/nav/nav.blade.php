@@ -44,7 +44,7 @@
         <!-- Portal do Fiqueado com Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFiqueado" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Portal do Fiqueado
+            Portal do aluno
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownFiqueado">
             <a class="dropdown-item" href="{{ route('portal-do-franqueado') }}">Acessar</a>
@@ -54,7 +54,7 @@
 
         <!-- Botão Fazer Matrícula -->
         <li class="nav-item">
-          <a class="btn btn-danger my-2 my-sm-0" href="https://decola.eadplataforma.app/register" role="button">Fazer Matrícula</a>
+          <a class="btn btn-danger my-2 my-sm-0" href="https://decola.eadplataforma.app/register" role="button">       <i class="bi bi-person me-2"></i> Fazer Matrícula</a>
         </li>
       </ul>
     </div>

@@ -24,6 +24,7 @@
 body {
     font-size: 14pt;
     overflow-x: hidden;
+    background-color: #f8f9fa;
 }
 
 /* Tipografia para h1 a h6 */
@@ -98,9 +99,7 @@ section{
     transform: scale(1.1) rotate(-5deg);
 }
 
-h3:hover{
-    color: #fff !important;
-}
+
 
 .display-4:hover{
     color: #fff;
@@ -457,7 +456,7 @@ btn-primary{
 
 /* Estilo para a seção da newsletter */
 .newsletter-section {
-    background-color: #00345e;
+
     padding: 50px 0;
     display: flex;
     justify-content: center;
@@ -470,7 +469,8 @@ btn-primary{
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 40px 30px;
-    max-width: 90;
+    margin: auto !important;
+    max-width: 700px !important;
     color: rgb(0, 0, 0);
     text-align: center;
     overflow: hidden;
@@ -496,6 +496,23 @@ btn-primary{
     margin-bottom: 30px;
     color: #000000;
 }
+
+.wave-top, .wave-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.wave-top {
+    top: 0;
+}
+.wave-bottom {
+    bottom: 0;
+}
+.newsletter-box {
+    max-width: 500px;
+    margin: auto;
+}
+
 
 @keyframes gradient {
     0% {

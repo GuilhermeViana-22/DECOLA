@@ -18,8 +18,11 @@
      <!-- Cursos -->
      @include('components.curso.curso') <!-- Inclui o arquivo missao.blade.php -->
 
-    <!-- Depoimentos -->
-    @include('components.depoimentos.depoimentos') <!-- Inclui o arquivo depoimentos.blade.php
+
+    @include('components.depoimentos.depoimentos')
+    @include('components.news.news')
+
+
 
 
 @endsection

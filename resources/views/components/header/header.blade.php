@@ -5,22 +5,20 @@
           <i class="bi bi-geo-alt me-2"></i>
           <span>São Paulo, SP</span>
         </div>
-        <span class="pipe mx-3 d-none d-md-block">|</span>
+        <span class="pipe mx-1 d-none d-md-block">|</span>
         <div class="d-flex align-items-center justify-content-center">
           <i class="bi bi-envelope me-2"></i>
           <span>administracao@escoladecola.com.br</span>
         </div>
-        <span class="pipe mx-3 d-none d-md-block">|</span>
+        <span class="pipe mx-1 d-none d-md-block">|</span>
         <div class="d-flex align-items-center justify-content-center">
           <i class="bi bi-whatsapp me-2 text-danger"></i>
           <span class="me-3">+55 (11) 91234-5678</span>
           <i class="bi bi-whatsapp me-2 text-danger"></i>
           <span>+55 (21) 99876-5432</span>
         </div>
-        <span class="pipe mx-3 d-none d-md-block">|</span>
+        <span class="pipe mx-1 d-none d-md-block">|</span>
         <div class="d-flex align-items-center justify-content-center">
-          <i class="bi bi-person me-2"></i>
-          <span class="me-3">Matrícula</span>
           <i class="bi bi-box-arrow-in-right me-2"></i>
           <span>Portal do Franqueado</span>
         </div>
