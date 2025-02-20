@@ -1038,3 +1038,38 @@ hr {
     max-width:  100vh;
     height: auto;
 }
+   /* CSS atualizado com classes específicas */
+   .constructionc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.constructionc-content {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.constructionc-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.constructionc-text {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}

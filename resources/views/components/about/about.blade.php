@@ -2,7 +2,7 @@
     <div class="row align-items-center">
         <!-- Imagem à esquerda -->
         <div class="col-md-6 text-center">
-            <img src="{{ asset('arquivos/logos/6.png') }}" alt="Imagem Motivacional" class="img-fluid rounded" width="40%">
+            <img src="{{ asset('arquivos/logos/5.png') }}" alt="Imagem Motivacional" class="img-fluid rounded" width="40%">
         </div>
 
         <!-- Lista de frases alinhadas -->
