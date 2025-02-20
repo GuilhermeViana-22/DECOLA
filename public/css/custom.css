@@ -206,29 +206,43 @@ i{
 }
 
 /* Estilo para h2 e h3 com gradiente e efeitos */
-
+.missao {
+    background-color: #f8f9fa;
+}
+.missao-card {
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.missao-card:hover {
+    transform: scale(1.05);
+}
+.missao-icon i {
+    font-size: 2rem;
+    color: #007bff;
+}
 
 .missao-title:hover {
     transform: scale(1.1);  /* Efeito de aumentar o tÃ­tulo no hover */
 }
-/* Estilo para os ícones */
+/* Estilo para os ï¿½cones */
 .missao-icon i {
-    font-size: 2.5rem; /* Aumenta o tamanho dos ícones */
+    font-size: 2.5rem; /* Aumenta o tamanho dos ï¿½cones */
     color: #002f6c; /* Cor azul Wizard */
-    transition: transform 0.3s ease; /* Efeito de transição */
+    transition: transform 0.3s ease; /* Efeito de transiï¿½ï¿½o */
 }
 
-/* Efeito de hover para os ícones */
+/* Efeito de hover para os ï¿½cones */
 .missao-icon i:hover {
-    transform: scale(1.2); /* Aumenta um pouco o ícone no hover */
+    transform: scale(1.2); /* Aumenta um pouco o ï¿½cone no hover */
 }
 
-/* Alinhamento e estilo do título */
+/* Alinhamento e estilo do tï¿½tulo */
 .missao-title {
-    font-size: 2rem; /* Aumenta o tamanho do título */
+    font-size: 2rem; /* Aumenta o tamanho do tï¿½tulo */
     font-weight: bold;
     margin-top: 1rem;
-    color: #00345e; /* Cor do título */
+    color: #00345e; /* Cor do tï¿½tulo */
 }
 
 /* Estilo para o texto do card */
@@ -245,7 +259,7 @@ i{
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     padding: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transiï¿½ï¿½o */
     height: 100%;
 }
 
@@ -258,11 +272,11 @@ i{
 /* Layout do grid para duas colunas */
 @media (max-width: 576px) {
     .col-12 {
-        width: 100%; /* Coloca os cards em uma única coluna em telas pequenas */
+        width: 100%; /* Coloca os cards em uma ï¿½nica coluna em telas pequenas */
     }
 }
 
-/* Estilo de fundo e espaçamento */
+/* Estilo de fundo e espaï¿½amento */
 .missao-card {
     display: flex;
     flex-direction: column;
@@ -279,7 +293,7 @@ i{
 
 .col-sm-6 {
     max-width: 50%; /* Dois cards por linha */
-    padding: 0 1rem; /* Espaçamento entre os cards */
+    padding: 0 1rem; /* Espaï¿½amento entre os cards */
 }
 
 .col-md-6 {
@@ -287,7 +301,7 @@ i{
 }
 
 .col-lg-3 {
-    max-width: 25%; /* Três cards por linha em telas maiores */
+    max-width: 25%; /* Trï¿½s cards por linha em telas maiores */
 }
 
 
