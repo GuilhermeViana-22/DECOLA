@@ -25,7 +25,7 @@
                 <div class="card border-0 p-4" style="background: #f8f9fa;">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
-                            <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Felipe Escaleira" class="rounded-circle img-fluid" style="max-width: 300px;">
+                            <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Felipe Escaleira" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
                         </div>
                         <div class="col-md-8 py-4">
                             <h2 class="fw-bold display-5">Felipe Escaleira</h2>
@@ -41,12 +41,12 @@
                 <div class="card border-0 p-4" style="background: #f8f9fa;">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
-                            <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Ana Silva" class="rounded-circle img-fluid" style="max-width: 300px;">
+                            <img src="{{ asset('arquivos/professor/carolina.png') }}" alt="Ana Silva" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
                         </div>
                         <div class="col-md-8 py-4">
-                            <h2 class="fw-bold display-5">Ana Silva</h2>
-                            <span class="badge bg-secondary fs-4 mb-3">MENTORA</span>
-                            <p class="fs-4">Especialista em educação digital, com mais de 10 anos de experiência na formação de jovens talentos para o mercado tecnológico.</p>
+                            <h2 class="fw-bold display-5">Carolina Pereira</h2>
+                            <span class="badge bg-secondary fs-4 mb-3">Mentora</span>
+                            <p class="fs-4">Atuando há mais de 2 décadas na Educação, a mentora Carolina Pereira é franqueada e responsável pela unidade Caieiras.</p>
                         </div>
                     </div>
                 </div>
@@ -57,27 +57,41 @@
                 <div class="card border-0 p-4" style="background: #f8f9fa;">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
-                            <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Carlos Mendes" class="rounded-circle img-fluid" style="max-width: 300px;">
+                            <img src="{{ asset('arquivos/professor/estevam.png') }}" alt="Carlos Mendes" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
+                        </div>
+                        <div class="col-md-8 py-4">
+                            <h2 class="fw-bold display-5">Olavio Estevam</h2>
+                            <span class="badge bg-success fs-4 mb-3">Mentor</span>
+                            <p class="fs-4">Apaixonado pela educação e pelas soft skills, Olavio Estevam é franqueado na cidade de São Paulo, em Perus, Caieiras e Jaraguá.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professor 4 -->
+            <div class="carousel-item">
+                <div class="card border-0 p-4" style="background: #f8f9fa;">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center py-4">
+                            <img src="{{ asset('arquivos/professor/barreto.png') }}" alt="Carlos Mendes" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
                         </div>
                         <div class="col-md-8 py-4">
                             <h2 class="fw-bold display-5">Carlos Mendes</h2>
-                            <span class="badge bg-success fs-4 mb-3">COACH</span>
-                            <p class="fs-4">Coach de carreira e especialista em desenvolvimento pessoal, ajudando alunos a desbloquear seu verdadeiro potencial.</p>
+                            <span class="badge bg-success fs-4 mb-3">Mentor especialista</span>
+                            <p class="fs-4">Especialista em soft skills, Ely Barreto atua há 4 anos na Decola, sendo Mater franqueado em todo Estado de São Paulo, além de gerir a franquia na cidade de Francisco Morato.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Botões de navegação -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark p-3" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark p-3" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
+        <!-- Indicadores (bolinhas) centralizados abaixo do carrossel -->
+        <div class="carousel-indicators d-flex justify-content-center">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
     </div>
 </div>
 @endsection

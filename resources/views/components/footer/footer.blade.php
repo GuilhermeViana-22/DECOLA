@@ -21,21 +21,38 @@
             </div>
 
             <!-- Quem São os Professores -->
-          <div class="col-md-3 mb-4 mb-md-0">
-    <h5 class="text-dark mt-1">Quem São os Professores?</h5>
-    <div class="d-flex align-items-center">
-        <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Professor 1" class="rounded-circle border border-primary mr-4 " style="width: 45px; height: 45px; object-fit: cover; margin-left: -2px">
- <img src="{{ asset('arquivos/professor/barreto.png') }}" alt="Professor 2" class="rounded-circle border border-primary mr-4 " style="width: 45px; height: 45px; object-fit: cover; margin-left: -200px">
-
-    </div>
-    <ul class="list-unstyled mt-1 ms-1">
-        <li><a href="{{ route('instrutores') }}" class="text-muted text-decoration-none">Professores Qualificados</a></li>
-        <li><a href="#" class="text-muted text-decoration-none">Metodologia</a></li>
-        <li><a href="#" class="text-muted text-decoration-none">Depoimentos</a></li>
-    </ul>
-</div>
-
-
+            <!-- Quem São os Professores -->
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="text-dark mt-1">Quem São os Professores?</h5>
+                <div class="d-flex align-items-center">
+                    <a href="{{ route('instrutores') }}">
+                        <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Professor 1"
+                            class="rounded-circle border border-primary"
+                            style="width: 45px; height: 45px; object-fit: cover; margin-right: 5px;">
+                    </a>
+                    <a href="{{ route('instrutores') }}">
+                        <img src="{{ asset('arquivos/professor/barreto.png') }}" alt="Professor 2"
+                            class="rounded-circle border border-primary"
+                            style="width: 45px; height: 45px; object-fit: cover; margin-right: 5px;">
+                    </a>
+                    <a href="{{ route('instrutores') }}">
+                        <img src="{{ asset('arquivos/professor/carolina.png') }}" alt="Professor 3"
+                            class="rounded-circle border border-primary"
+                            style="width: 45px; height: 45px; object-fit: cover; margin-right: 5px;">
+                    </a>
+                    <a href="{{ route('instrutores') }}">
+                        <img src="{{ asset('arquivos/professor/estevam.png') }}" alt="Professor 4"
+                            class="rounded-circle border border-primary"
+                            style="width: 45px; height: 45px; object-fit: cover;">
+                    </a>
+                </div>
+                <ul class="list-unstyled mt-1 ms-1">
+                    <li><a href="{{ route('instrutores') }}" class="text-muted text-decoration-none">Professores
+                            Qualificados</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Metodologia</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Depoimentos</a></li>
+                </ul>
+            </div>
 
             <!-- Redes Sociais -->
             <div class="col-md-3 mb-4 mb-md-0">
@@ -64,7 +81,6 @@
                     style="max-width: 120px;">
             </div>
             <div class="col-md-10 text-center text-md-start mt-3">
-
                 <h5 class="text-dark">Formas de pagamento</h5>
                 <div class="d-flex justify-content-md-start justify-content-center flex-wrap gap-2">
                     <img src="{{ asset('arquivos/pagamentos/payment1.png') }}" alt="Visa" class="logo-pagamento">
