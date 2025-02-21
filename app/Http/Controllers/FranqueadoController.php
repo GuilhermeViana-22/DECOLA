@@ -6,13 +6,18 @@ use Illuminate\Http\Request;
 
 class FranqueadoController extends Controller
 {
+
     public function index()
     {
-        return view('pages.franqueado.franqueado');  // Caminho para a p�gina home.blade.php
+        // lógica do index
+        return view('pages.franqueado.index');
     }
 
     public function suporte()
     {
-        return view('pages.franqueado.suporte');  // Caminho para a p�gina home.blade.php
+        // lógica do suporte
+        return view('pages.franqueado.suporte');
     }
+
+
 }

@@ -37,7 +37,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUnidades">
             <a class="nav-link" href="{{ route('unidades') }}">Nossas unidades</a>
-
+            <a class="nav-link" href="{{ route('unidades-3d') }}">Explorar projeto 3D</a>
           </div>
         </li>
 

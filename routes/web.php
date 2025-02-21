@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UnidadeController;
 use App\Http\Controllers\FranqueadoController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MatriculaController;
 
 // Rota para a página home sem prefixo
@@ -23,6 +24,7 @@ Route::prefix('pages')->group(function () {
 
 // Rota para unidades, quem somos, e matrícula
 Route::get('/unidades', [UnidadeController::class, 'index'])->name('unidades');
+Route::get('/unidade', [UnidadeController::class, 'unidade'])->name('unidades-3d');
 Route::get('/quem-somos', [HomeController::class, 'quemSomos'])->name('quem-somos');
 Route::get('/instrutores', [HomeController::class, 'instrutores'])->name('instrutores');
 
@@ -30,11 +32,14 @@ Route::get('/instrutores', [HomeController::class, 'instrutores'])->name('instru
 Route::prefix('portal-do-franqueado')->group(function () {
     Route::get('/', [FranqueadoController::class, 'index'])->name('portal-do-franqueado');
     Route::get('/suporte', [FranqueadoController::class, 'suporte'])->name('portal-do-franqueado.suporte');
-});
 
+});
 // Rota para matrícula
 Route::get('/matricula', [MatriculaController::class, 'create'])->name('matricula');
 
 
 // Rota para blog
 Route::get('/blog', [BlogController::class, 'index'])->name('pages.blog');
+
+
+Route::get('/login', [LoginController::class, 'index'])->name('.login');

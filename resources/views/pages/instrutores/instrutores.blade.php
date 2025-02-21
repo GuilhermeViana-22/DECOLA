@@ -1,20 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Seção inicial com fundo gradiente e texto moderno -->
-<div class="bg-gradient py-5 text-white" style="background: linear-gradient(to right, #4a00e0, #8e2de2);">
+
+<!-- Seção de Banner -->
+<section class="bg-danger text-white py-5 position-relative">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <h1 class="text-dark fw-bold display-3">Nossos Instrutores</h1>
-                <p class="text-dark fs-3">Conheça os profissionais que fazem parte do time da Decola School.</p>
+            <!-- Texto Principal -->
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Nossos Instrutores</h1>
+                <p class="lead">Conheça os profissionais que fazem parte do time da Decola School.</p>
             </div>
-            <div class="col-lg-6 text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid" style="max-width: 400px;">
+            <!-- Ícone do Foguete Destacado -->
+            <div class="col-lg-6 text-center position-relative">
+                <div class="rocket-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid rocket-icon">
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Carrossel de Instrutores -->
 <div class="container py-5">

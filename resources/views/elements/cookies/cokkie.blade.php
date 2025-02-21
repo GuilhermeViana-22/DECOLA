@@ -1,15 +1,18 @@
-<!-- Banner de Cookies -->
+<!-- Banner de Cookies - Decola School -->
 <section id="cookieBanner" class="cookie-banner">
     <div class="cookie-content">
+        <h2 class="cookie-title">Painel de Configuração de Privacidade</h2>
         <p class="cookie-text">
-            ⭐ Ao continuar neste site, você aceita nossos <a href="/termos" class="cookie-link">Termos de Uso</a> e
-            <a href="/privacidade" class="cookie-link">Política de Privacidade</a>.
-            Todas as informações contidas são para benefícios dos usuários.
-            Seus dados são restritos e não serão compartilhados com terceiros.
+            Ao acessar o site da <strong>Decola School</strong>, algumas informações podem ser armazenadas no seu navegador através de cookies.
+            Esses dados são usados para aprimorar sua experiência, lembrar suas preferências e garantir o funcionamento adequado da plataforma.
+        </p>
+        <p class="cookie-text">
+            Você pode escolher quais tipos de cookies deseja permitir. Bloquear certas categorias pode afetar algumas funcionalidades.
         </p>
         <div class="cookie-buttons">
-            <button class="btn-accept" onclick="acceptCookies()">Aceitar</button>
-            <button class="btn-decline" onclick="declineCookies()">Recusar</button>
+            <button class="btn-accept" onclick="acceptCookies()">Aceitar Todos</button>
+           
+            <button class="btn-decline" onclick="declineCookies()">Recusar Todos</button>
         </div>
     </div>
 </section>
@@ -17,16 +20,14 @@
 <!-- Tela de fundo escurecida -->
 <div id="overlay" class="overlay"></div>
 
-
 <!-- CSS -->
 <style>
-  /* Estilos do banner de cookies */
 .cookie-banner {
     position: fixed;
     bottom: -100%;
     left: 0;
     width: 100%;
-    background: linear-gradient(135deg, #004085, #0062cc); /* Azul estilo escola de inglês */
+    background: linear-gradient(135deg, #004085, #0062cc);
     color: white;
     padding: 20px;
     text-align: center;
@@ -43,16 +44,15 @@
     align-items: center;
 }
 
-.cookie-text {
-    font-size: 20px;
-    max-width: 90%;
-    margin-bottom: 15px;
+.cookie-title {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.cookie-link {
-    color: #ffcc00;
-    text-decoration: underline;
-    font-weight: bold;
+.cookie-text {
+    font-size: 18px;
+    max-width: 90%;
+    margin-bottom: 15px;
 }
 
 .cookie-buttons {
@@ -60,17 +60,17 @@
     gap: 15px;
 }
 
-.btn-accept, .btn-decline {
+.btn-accept, .btn-settings, .btn-decline {
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .btn-accept {
-    background-color: #28a745; /* Verde de sucesso */
+    background-color: #28a745;
     color: white;
 }
 
@@ -78,8 +78,17 @@
     background-color: #218838;
 }
 
+.btn-settings {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-settings:hover {
+    background-color: #e0a800;
+}
+
 .btn-decline {
-    background-color: #dc3545; /* Vermelho de erro */
+    background-color: #dc3545;
     color: white;
 }
 
@@ -87,8 +96,6 @@
     background-color: #c82333;
 }
 
-/* Estilos para tela de fundo escurecida */
-/* Estilos para tela de fundo escurecida */
 .overlay {
     position: fixed;
     top: 0;
@@ -98,23 +105,20 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
     display: none;
-    pointer-events: auto; /* Permite bloquear os cliques */
 }
-
 
 @media (max-width: 768px) {
     .cookie-banner {
         padding: 15px;
     }
     .cookie-text {
-        font-size: 18px;
-    }
-    .btn-accept, .btn-decline {
         font-size: 16px;
+    }
+    .btn-accept, .btn-settings, .btn-decline {
+        font-size: 14px;
         padding: 10px 20px;
     }
 }
-
 </style>
 
 <!-- JavaScript -->
@@ -122,19 +126,28 @@
 document.addEventListener("DOMContentLoaded", function() {
     if (!localStorage.getItem("cookiesAccepted")) {
         document.getElementById("cookieBanner").style.bottom = "0";
-        document.getElementById("overlay").style.display = "block"; // Exibe o fundo escurecido
+        document.getElementById("overlay").style.display = "block";
     }
 });
 
 function acceptCookies() {
     localStorage.setItem("cookiesAccepted", "true");
-    document.getElementById("cookieBanner").style.bottom = "-100%";
-    document.getElementById("overlay").style.display = "none"; // Esconde o fundo escurecido e libera cliques
+    closeBanner();
 }
 
 function declineCookies() {
     localStorage.setItem("cookiesAccepted", "false");
-    document.getElementById("cookieBanner").style.bottom = "-100%";
-    document.getElementById("overlay").style.display = "none"; // Esconde o fundo escurecido e libera cliques
+    closeBanner();
 }
+
+function openSettings() {
+    alert("Abrindo painel de configurações de cookies...");
+}
+
+function closeBanner() {
+    document.getElementById("cookieBanner").style.bottom = "-100%";
+    document.getElementById("overlay").style.display = "none";
+}
+
+
 </script>

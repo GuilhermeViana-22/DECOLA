@@ -10,7 +10,7 @@
                 <p class="fs-4">Tire aqui suas principais dúvidas sobre os motivos pelos quais você deve escolher a Decola School</p>
             </div>
             <!-- Imagem do foguete -->
-               
+
                  <div class="col-lg-6 text-center position-relative">
                     <div class="rocket-wrapper">
                         <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid rocket-icon">

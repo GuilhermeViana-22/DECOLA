@@ -20,7 +20,7 @@
         <span class="pipe mx-1 d-none d-md-block">|</span>
         <div class="d-flex align-items-center justify-content-center">
           <i class="bi bi-box-arrow-in-right me-2"></i>
-          <span>Portal do Franqueado</span>
+          <a href="{{ route('login') }}" class="text-white">Portal do Franqueado</a>
         </div>
       </div>
     </div>
