@@ -1,8 +1,11 @@
 @extends('layouts.app') <!-- Estende o layout base -->
 @section('content')
-    @include('components.banner.banner') <!-- Inclui o arquivo banner.blade.php --> --
-    @include('components.about.about') <!-- Inclui o arquivo about.blade.php
-    @include('components.missao.missao')
+    @include('components.banner.banner') <!-- Inclui o arquivo banner.blade.php -->
+
+
+
+ @include('components.about.about')
+ @include('components.missao.missao')
     @include('components.resultados.resultados')
     @include('components.curso.curso')
     @include('components.depoimentos.depoimentos')

@@ -6,11 +6,12 @@
             Preparamos indivíduos para superar desafios, construir conexões e alcançar o sucesso com confiança e propósito.
         </h2>
     </div>
-</section>
 
-
-
-<section id="valores" class="missao py-5">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
@@ -51,6 +52,12 @@
             </div>
         </div>
     </div>
+</section>
+
+
+
+<section id="valores" class="missao py-5">
+
 </section>
 
 
