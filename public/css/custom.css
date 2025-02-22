@@ -83,7 +83,12 @@ section{
 
 }
 
-
+.navbar{
+    background-color: #ffffff !important;
+    height: auto;
+    color: #000000;
+    position-anchor: inherit;
+}
 
 .rocket-wrapper {
     position: relative;

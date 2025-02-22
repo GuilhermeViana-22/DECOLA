@@ -62,3 +62,29 @@
 <script src="{{ asset('js/chart.js') }}"></script>
  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Detecta se há um hash na URL (ex: #cursos)
+        if (window.location.hash) {
+            const targetSection = document.querySelector(window.location.hash);
+
+            // Espera um pouco para garantir que a página carregou antes de rolar
+            setTimeout(() => {
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 500);
+        }
+
+        // Adiciona evento nos links para forçar a navegação correta
+        document.querySelectorAll('a[href^="{{ route('home') }}#"]').forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetHash = this.getAttribute("href").split("#")[1];
+
+                // Redireciona para a página inicial com o hash correto
+                window.location.href = "{{ route('home') }}#" + targetHash;
+            });
+        });
+    });
+    </script>
