@@ -42,4 +42,7 @@ Route::get('/matricula', [MatriculaController::class, 'create'])->name('matricul
 Route::get('/blog', [BlogController::class, 'index'])->name('pages.blog');
 
 
-Route::get('/login', [LoginController::class, 'index'])->name('.login');
+Route::get('/login', [LoginController::class, 'login'])->name('.login');
+Route::get('/register', [LoginController::class, 'register'])->name('.register');
+Route::get('/showForgotPasswordForm', [LoginController::class, 'showForgotPasswordForm'])->name('.reset');
+
