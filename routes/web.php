@@ -27,6 +27,7 @@ Route::get('/unidades', [UnidadeController::class, 'index'])->name('unidades');
 Route::get('/unidade', [UnidadeController::class, 'unidade'])->name('unidades-3d');
 Route::get('/quem-somos', [HomeController::class, 'quemSomos'])->name('quem-somos');
 Route::get('/instrutores', [HomeController::class, 'instrutores'])->name('instrutores');
+Route::post('/news', [HomeController::class, 'news'])->name('news');
 
 // Rota para o portal do Fiqueado
 Route::prefix('portal-do-franqueado')->group(function () {

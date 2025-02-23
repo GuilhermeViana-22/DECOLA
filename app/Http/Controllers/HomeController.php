@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
 
 class HomeController extends Controller
 {
@@ -43,4 +45,17 @@ class HomeController extends Controller
     public function certificados(){
         return view('pages.certificado.certificado');
     }
+
+    public function news()
+{
+    $dados = [
+        'subject' => '🎉 Inscrição Confirmada na Newsletter!',
+        'body' => 'Obrigado por se inscrever! Em breve, você receberá novidades exclusivas diretamente no seu e-mail.',
+    ];
+
+    Mail::to('gguicido.viana@gmail.com')->send(SendMail::enviarNewsLetter($dados));
+
+    return response()->json(['message' => 'E-mail de confirmação enviado com sucesso!']);
+}
+
 }

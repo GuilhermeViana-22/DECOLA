@@ -6,21 +6,24 @@
             </h2>
             <p class="text-muted">Fique por dentro das novidades da Decola de Soft Skills!</p>
 
-            <form action="process.php" method="POST">
-                <div class="mb-3 position-relative">
+            <form action="{{ route('news') }}" method="POST">
+                @csrf <!-- Proteção contra CSRF -->
+
+                <div class="mb-3">
                     <label for="email" class="form-label">Seu e-mail</label>
                     <div class="input-group">
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                        <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail" required>
+                        <input type="email" class="form-control" name="email" id="email"
+                               placeholder="Digite seu e-mail" required aria-label="Digite seu e-mail">
                     </div>
                 </div>
 
-                <!-- reCAPTCHA centralizado acima do bot�o -->
-                <div class="recaptcha-container">
+                <!-- reCAPTCHA centralizado -->
+                <div class="d-flex justify-content-center mt-3">
                     <div class="g-recaptcha" data-sitekey="SUA_CHAVE_DO_SITE"></div>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 mt-3">
+                <button type="submit" class="btn btn-primary w-100 mt-4">
                     <i class="fas fa-paper-plane"></i> Enviar
                 </button>
             </form>
