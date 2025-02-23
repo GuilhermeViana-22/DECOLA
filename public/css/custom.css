@@ -3,6 +3,15 @@
     margin: 0 auto;
     font-family: 'NomeDaFonte', sans-serif;
 }
+/* Resetando os ícones FontAwesome */
+.fas, .far, .fal, .fad, .fab {
+    all: unset; /* Remove todas as propriedades herdadas */
+    font-family: "Font Awesome 5 Free"; /* Restaura a fonte padrão */
+    font-weight: 900; /* Define um peso padrão */
+    display: inline-block; /* Garante alinhamento correto */
+}
+
+
 /* Controla a largura do scroll */
 ::-webkit-scrollbar {
     width: 8px; /* Ajuste a largura conforme necess�rio */
@@ -183,9 +192,7 @@ section{
     background-color: #00345e;
     margin-top: -26px;
 }
-i{
-    color: white;
-}
+
 /* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
 .navbar-brand {
     margin-left: 0 !important;
@@ -978,13 +985,12 @@ hr {
 .open #modulos-dropdown-icon {
     transform: rotate(180deg);
 }
-
-/*  inicio do card de  competencias */
+/*  Estilização dos cards de competências */
 .competencias-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    align-items: start;
+    align-items: stretch;
     text-align: left;
     padding: 20px;
 }
@@ -996,6 +1002,10 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 5px solid #bb2d3b;
+    min-height: 250px; /* Define um tamanho mínimo para manter a uniformidade */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .competencias-card:hover {
@@ -1028,6 +1038,7 @@ hr {
     font-size: 14px;
     color: #bb2d3b;
 }
+
 
 /* final do card de competencias */
 
@@ -1077,4 +1088,16 @@ hr {
     display: flex;
     justify-content: center;
     margin: 15px 0;
+}
+
+
+/* Estilizando os ícones novamente */
+.dropdown-header i {
+    color: #007bff; /* Azul padrão do Bootstrap */
+    font-size: 18px; /* Tamanho dos ícones */
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-header.open i {
+    transform: rotate(180deg); /* Gira o ícone ao abrir */
 }

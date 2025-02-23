@@ -13,7 +13,7 @@
 
         <!-- Unidades -->
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('home') }}">Nossa missão</a>
+          <a class="nav-link" href="{{ route('home') }}#missao">Nossa missão</a>
         </li>
 
         <!-- Quem Somos -->

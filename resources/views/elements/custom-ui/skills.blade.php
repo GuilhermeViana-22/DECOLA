@@ -1,92 +1,100 @@
-<div class="row p-4">
-    <div class="col-12 col-md-6">
-        <section class="flexibilidade-section">
-            <div class="flexibilidade-header" onclick="toggleContent()">
-                <h5>Flexibilidade</h5>
-                <i class="fas fa-chevron-down" id="dropdown-icon"></i>
-            </div>
-            <div class="flexibilidade-content" id="flexibilidade-content">
-                <ul>
-                    <li>✔ Cronograma Geral e Ementa: Acesse todos os detalhes e a programação completa do curso.</li>
-                    <li>✔ Convite e Aula Inaugural:
-                        <ul>
-                            <li>1 Página | Aula de boas-vindas para entender como o curso funcionará.</li>
-                            <li>32:37 | Vídeo exclusivo para começar sua jornada.</li>
-                        </ul>
-                    </li>
-                    <li>✔ Material de Apoio e Ementas: Cronograma detalhado (10 páginas) e conteúdos extras para estudo.</li>
-                </ul>
-            </div>
-        </section>
-    </div>
+<div class="container mt-5">
+    <div class="row g-3">
+        <!-- Dropdown Flexibilidade -->
+        <div class="col-12 col-md-6 col-sm-12">
+            <section class="dropdown-section">
+                <div class="dropdown-header d-flex justify-content-between align-items-center p-3 rounded shadow-sm bg-light" onclick="toggleContent('flexibilidade-content', 'dropdown-icon')">
+                    <h5 class="mb-0"><i class="fas fa-handshake"></i> Flexibilidade</h5>
+                    <i class="fas fa-chevron-down" id="dropdown-icon"></i>
+                </div>
+                <div class="dropdown-content p-3 bg-light border-top" id="flexibilidade-content">
+                    <ul>
+                        <li><i class="fas fa-calendar-alt"></i> Cronograma Geral e Ementa: Programação completa do curso.</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Convite e Aula Inaugural:
+                            <ul>
+                                <li><i class="fas fa-file-alt"></i> 1 Página | Aula de boas-vindas.</li>
+                                <li><i class="fas fa-video"></i> 32:37 | Vídeo exclusivo.</li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-book"></i> Material de Apoio e Ementas: Conteúdos extras para estudo.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-    <div class="col-12 col-md-6">
-        <section class="modulos-curso-section">
-            <div class="modulos-curso-header" onclick="toggleModulosContent()">
-                <h5>Módulos do Curso</h5>
-                <i class="fas fa-chevron-down" id="modulos-dropdown-icon"></i>
-            </div>
-            <div class="modulos-curso-content" id="modulos-curso-content">
-                <ul>
-                    <li>✔ Felicidade</li>
-                    <li>✔ Comunicação</li>
-                    <li>✔ Flexibilidade e Resiliência</li>
-                    <li>✔ Liderança e Trabalho em Equipe</li>
-                    <li>✔ Criatividade</li>
-                    <li>✔ Proatividade</li>
-                    <li>✔ Empatia</li>
-                    <li>✔ Ética</li>
-                    <li>✔ Pensamento Crítico</li>
-                    <li>✔ Educação Financeira</li>
-                    <li>✔ Inteligência Emocional</li>
-                    <li>✔ Empreendedorismo</li>
-                </ul>
-            </div>
-        </section>
+        <!-- Dropdown Módulos do Curso -->
+        <div class="col-12 col-md-6 col-sm-12">
+            <section class="dropdown-section">
+                <div class="dropdown-header d-flex justify-content-between align-items-center p-3 rounded shadow-sm bg-light" onclick="toggleContent('modulos-curso-content', 'modulos-dropdown-icon')">
+                    <h5 class="mb-0"><i class="fas fa-layer-group"></i> Módulos do Curso</h5>
+                    <i class="fas fa-chevron-down" id="modulos-dropdown-icon"></i>
+                </div>
+                <div class="dropdown-content p-3 bg-light border-top" id="modulos-curso-content">
+                    <ul>
+                        <li><i class="fas fa-smile"></i> Felicidade</li>
+                        <li><i class="fas fa-comments"></i> Comunicação</li>
+                        <li><i class="fas fa-sync-alt"></i> Flexibilidade e Resiliência</li>
+                        <li><i class="fas fa-users"></i> Liderança e Trabalho em Equipe</li>
+                        <li><i class="fas fa-lightbulb"></i> Criatividade</li>
+                        <li><i class="fas fa-running"></i> Proatividade</li>
+                        <li><i class="fas fa-heart"></i> Empatia</li>
+                        <li><i class="fas fa-balance-scale"></i> Ética</li>
+                        <li><i class="fas fa-brain"></i> Pensamento Crítico</li>
+                        <li><i class="fas fa-coins"></i> Educação Financeira</li>
+                        <li><i class="fas fa-chart-line"></i> Inteligência Emocional</li>
+                        <li><i class="fas fa-briefcase"></i> Empreendedorismo</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 
 <style>
-    .flexibilidade-section, .modulos-curso-section {
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 8px;
-        margin-bottom: 15px;
-        background-color: #f9f9f9;
-    }
-
-    .flexibilidade-header, .modulos-curso-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .dropdown-header {
         cursor: pointer;
-        padding: 10px;
-        background: #e0e0e0;
-        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
     }
 
-    .flexibilidade-content, .modulos-curso-content {
+    .dropdown-header:hover {
+        background-color: #f8f9fa;
+    }
+
+    .dropdown-content {
         display: none;
-        padding-top: 10px;
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: hidden;
     }
 
-    .open .fas {
-        transform: rotate(180deg);
+    .dropdown-content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-content li {
+        padding: 8px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .dropdown-content li i {
+        margin-right: 8px;
+    }
+
+    .dropdown-content.open {
+        display: block;
+        max-height: 2000px; /* Large enough value to open */
     }
 </style>
 
 <script>
-    function toggleContent() {
-        const content = document.getElementById('flexibilidade-content');
-        const icon = document.getElementById('dropdown-icon');
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        icon.parentElement.classList.toggle('open');
-    }
+    function toggleContent(contentId, iconId) {
+        const content = document.getElementById(contentId);
+        const icon = document.getElementById(iconId);
 
-    function toggleModulosContent() {
-        const content = document.getElementById('modulos-curso-content');
-        const icon = document.getElementById('modulos-dropdown-icon');
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        icon.parentElement.classList.toggle('open');
+        content.classList.toggle('open');
+        icon.classList.toggle('fa-chevron-up');
+        icon.classList.toggle('fa-chevron-down');
     }
 </script>

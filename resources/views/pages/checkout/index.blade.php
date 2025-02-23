@@ -45,11 +45,5 @@
             </div>
         </div>
     </section>
-    <div class="container my-5">
-        @include('elements.custom-ui.card-skills')
-        @include('elements.custom-ui.skills')
-    </div>
 
-    <h2 class="text-center p-4 mt-4 mb-4">Comparação de Desempenho: Estudantes com e sem Soft Skills</h2>
-    <canvas id="barChart" width="800" height="600" class="p-4 mt-4 mb-4"></canvas>
 @endsection
