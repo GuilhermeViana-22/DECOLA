@@ -18,7 +18,7 @@
 
     .navbar-brand img {
         height: 50px; /* Ajuste conforme necessário */
-        max-height: 100%;
+        max-width: 100%;
     }
 
     .navbar-toggler {
@@ -50,7 +50,7 @@
 
     .navbar-brand img {
         height: 50px; /* Ajuste conforme necessário */
-        max-height: 100%;
+        max-width: 100%;
     }
 
     .navbar-toggler {
@@ -105,7 +105,7 @@
 
     .navbar-brand img {
         height: 50px; /* Ajuste conforme necessário */
-
+        max-width: 100%;
     }
 
     .navbar-toggler {
