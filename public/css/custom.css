@@ -36,6 +36,7 @@ body {
     background-color: #f8f9fa;
 }
 
+
 /* Tipografia para h1 a h6 */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;  /* Fonte moderna e profissional */
@@ -113,7 +114,10 @@ section{
     transform: scale(1.1) rotate(-5deg);
 }
 
-
+.navbar-brand img {
+    height: 90px  !important; /* Ajuste conforme necessário */
+    max-width: 100%  !important;
+}
 
 .display-4:hover{
     color: #fff;
