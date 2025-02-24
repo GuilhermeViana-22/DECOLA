@@ -26,7 +26,17 @@
         display: flex;
         align-items: center; /* Garante alinhamento */
     }
+    .missao{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
 
+    .section-title{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
 
 }
 
@@ -82,6 +92,16 @@
         font-size: 12px;
         padding: 8px 16px;
     }
+    .missao{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
+    .section-title{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
 
 }
 
@@ -114,6 +134,16 @@
         align-items: center; /* Garante alinhamento */
     }
 
+    .missao{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
+    .section-title{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
   }
 
 
@@ -121,6 +151,41 @@
 @media (min-width: 50px) and (max-width: 300px)  {
     .banner{
         display: none !important;
+    }
+    .navbar {
+        display: flex;
+        align-items: center; /* Garante alinhamento vertical */
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto; /* Mantém a logo à esquerda */
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Ajuste conforme necessário */
+        max-width: 100%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Mantém o menu à direita */
+        display: flex;
+        align-items: center; /* Garante alinhamento */
+    }
+
+    .missao{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
+    }
+
+    .section-title{
+        white-space: normal; /* Permite que o texto quebre */
+        word-wrap: break-word; /* Quebra palavras longas */
+        overflow-wrap: break-word; /* Alternativa para quebra */
     }
 }
 
