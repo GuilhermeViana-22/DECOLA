@@ -17,8 +17,8 @@
     }
 
     .navbar-brand img {
-        height: 50px; /* Ajuste conforme necessário */
-        max-width: 100%;
+        height: 50px  !important; /* Ajuste conforme necessário */
+        max-width: 100%  !important;
     }
 
     .navbar-toggler {
@@ -59,8 +59,8 @@
     }
 
     .navbar-brand img {
-        height: 50px; /* Ajuste conforme necessário */
-        max-width: 100%;
+        height: 50px  !important; /* Ajuste conforme necessário */
+        max-width: 100%  !important;
     }
 
     .navbar-toggler {
@@ -124,10 +124,9 @@
     }
 
     .navbar-brand img {
-        height: 50px; /* Ajuste conforme necessário */
-        max-width: 100%;
+        height: 50px  !important; /* Ajuste conforme necessário */
+        max-width: 100%  !important;
     }
-
     .navbar-toggler {
         margin-left: auto; /* Mantém o menu à direita */
         display: flex;
@@ -166,8 +165,8 @@
     }
 
     .navbar-brand img {
-        height: 50px; /* Ajuste conforme necessário */
-        max-width: 100%;
+        height: 50px  !important; /* Ajuste conforme necessário */
+        max-width: 100%  !important;
     }
 
     .navbar-toggler {
