@@ -3,6 +3,31 @@
     .banner{
         display: none !important;
     }
+    .navbar {
+        display: flex;
+        align-items: center; /* Garante alinhamento vertical */
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto; /* Mantém a logo à esquerda */
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Ajuste conforme necessário */
+        max-height: 100%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Mantém o menu à direita */
+        display: flex;
+        align-items: center; /* Garante alinhamento */
+    }
+
+
 }
 
 /* tables */
@@ -10,6 +35,30 @@
     .banner{
         display: none !important;
     }
+    .navbar {
+        display: flex;
+        align-items: center; /* Garante alinhamento vertical */
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto; /* Mantém a logo à esquerda */
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Ajuste conforme necessário */
+        max-height: 100%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Mantém o menu à direita */
+        display: flex;
+        align-items: center; /* Garante alinhamento */
+    }
+
 
     /*cokkie*/
     .cookie-banner {
@@ -41,6 +90,30 @@
     .banner{
         display: none !important;
     }
+    .navbar {
+        display: flex;
+        align-items: center; /* Garante alinhamento vertical */
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto; /* Mantém a logo à esquerda */
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Ajuste conforme necessário */
+
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Mantém o menu à direita */
+        display: flex;
+        align-items: center; /* Garante alinhamento */
+    }
+
   }
 
 
