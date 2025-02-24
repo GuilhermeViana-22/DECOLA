@@ -16,7 +16,7 @@
 
     @include('components.news.news')
 
-    <h2 class=" section-title text-center p-4 mt-4 mb-4">Comparação de Desempenho - Estudantes com e sem Soft Skills</h2>
-    <canvas id="barChart" width="800" height="600" class="p-4 mt-4 mb-4"></canvas>
+    {{-- <h2 class=" section-title text-center p-4 mt-4 mb-4">Comparação de Desempenho - Estudantes com e sem Soft Skills</h2>
+    <canvas id="barChart" width="800" height="600" class="p-4 mt-4 mb-4"></canvas> --}}
     @include('elements.cookies.cokkie')
 @endsection
