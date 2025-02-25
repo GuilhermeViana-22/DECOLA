@@ -26,6 +26,7 @@ const barChart = new Chart(ctx, {
   },
   options: {
     responsive: true,
+    indexAxis: 'y', // Alterando para o gráfico usar o eixo X
     plugins: {
       legend: {
         position: 'top',
@@ -39,7 +40,7 @@ const barChart = new Chart(ctx, {
       }
     },
     scales: {
-      y: {
+      x: {
         beginAtZero: true,
         ticks: {
           callback: function(value) {

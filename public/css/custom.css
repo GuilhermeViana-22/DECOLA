@@ -205,7 +205,7 @@ svg{
     margin-top: -26px;
 }
 #vm-destaque-novo{
-    display: hidden !important;
+    display: none !important;
 }
 
 /* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
@@ -663,6 +663,23 @@ button.btn-newsletter:focus {
     text-align: center;
     margin-bottom: 40px;
   }
+
+  .section-subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #002f6c; /* Cor azul Wizard */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .section-subtitle-white {
+    font-size: 32px  !important;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
 
   .stat-box {
     background: linear-gradient(135deg, #002f6c 0%, #0056b3 100%);

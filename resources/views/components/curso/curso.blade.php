@@ -1,10 +1,10 @@
 <?php
 $unidades = [
-    'Soft skills - Unidade Franco da Rocha',
-    'Soft skills - Unidade Jaraguá',
-    'Soft skills - Unidade Caieiras',
-    'Soft skills - Unidade Perus',
-    'Soft skills - Unidade Francisco Morato'
+    'Unidade Franco da Rocha',
+    'Unidade Jaraguá',
+    'Unidade Caieiras',
+    'Unidade Perus',
+    'Unidade Francisco Morato'
 ];
 
 // Função para gerar slugs corretamente
