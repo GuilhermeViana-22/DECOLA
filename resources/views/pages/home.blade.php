@@ -11,5 +11,4 @@
     @include('elements.custom-ui.card-skills')
     @include('elements.custom-ui.skills')
     @include('components.news.news')
-    @include('elements.cookies.cokkie')
 @endsection

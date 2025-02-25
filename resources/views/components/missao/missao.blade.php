@@ -1,6 +1,11 @@
 <section id="missao" class="missao d-flex justify-content-center align-items-center flex-column text-center">
 <h2 class="section-title"><strong>Na Decola, desenvolvemos soft skills para todas as fases da vida, desde a infância até a idade adulta</strong><br></h2>
     <h4 class="section-title">Preparamos indivíduos para superar desafios, construir conexões e alcançar o sucesso com confiança e propósito.</h4>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-anime="right">
             <div class="missao-card text-center shadow-sm">

@@ -1,3 +1,5 @@
+<section>
+
 <div class="competencias-row">
     <!-- Card 1: Público-Alvo -->
     <div class="competencias-card">
@@ -29,3 +31,5 @@
         <p>Até 1 ano para concluir o curso. Sem tempo agora? Não se preocupe! Você terá até 12 meses após a matrícula para participar e aproveitar ao máximo o conteúdo.</p>
     </div>
 </div>
+
+</section>
