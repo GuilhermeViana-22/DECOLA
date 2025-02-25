@@ -22,7 +22,7 @@ function gerarSlug($nome) {
         <div class="row justify-content-center">
             <?php foreach ($unidades as $unidade) :
                 $slug = gerarSlug($unidade); ?>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"data-anime="left">
                     <div class="curso-card card shadow-lg border-0 rounded-lg position-relative">
                         <img src="<?= asset('extra-images/shop-gird-9.jpg') ?>" class="card-img-top" alt="Curso Soft-skills">
                         <div class="card-body text-center">

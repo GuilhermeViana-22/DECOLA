@@ -1,190 +1,291 @@
-/* grendess */
+/* Estilo básico */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    /* Defina uma altura fixa para o gráfico */
+    margin: 0 auto;
+    /* Centraliza o gráfico */
+}
+
+/* Estilos de responsividade */
 @media (min-width: 601px) and (max-width: 700px) {
-    .banner{
+    .banner {
         display: none !important;
     }
+
     .navbar {
         display: flex;
-        align-items: center; /* Garante alinhamento vertical */
+        align-items: center;
         justify-content: space-between;
         padding: 0.5rem 1rem;
     }
 
     .navbar-brand {
-        margin-right: auto; /* Mantém a logo à esquerda */
+        margin-right: auto;
         display: flex;
-        align-items: center; /* Alinha verticalmente */
+        align-items: center;
     }
 
     .navbar-brand img {
-        height: 50px  !important; /* Ajuste conforme necessário */
-        max-width: 100%  !important;
+        height: 50px !important;
+        max-width: 100% !important;
     }
 
     .navbar-toggler {
-        margin-left: auto; /* Mantém o menu à direita */
+        margin-left: auto;
         display: flex;
-        align-items: center; /* Garante alinhamento */
-    }
-    .missao{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
+        align-items: center;
     }
 
-    .section-title{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
+    .missao,
+    .section-title {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
+    .chart-container {
+        height: 250px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .bannerMobile {
+        display: block;
+    }
+
+    #vm-destaque-one {
+        display: none;
+    }
+    #vm-destaque-novo{
+        display: block;
+        background-color: #00345e;
+        color: #ffffff;
+    }
 }
 
-/* tables */
+/* Para dispositivos entre 401px e 600px */
 @media (min-width: 401px) and (max-width: 600px) {
-    .banner{
+    .banner {
         display: none !important;
     }
+
     .navbar {
         display: flex;
-        align-items: center; /* Garante alinhamento vertical */
+        align-items: center;
         justify-content: space-between;
         padding: 0.5rem 1rem;
     }
 
     .navbar-brand {
-        margin-right: auto; /* Mantém a logo à esquerda */
+        margin-right: auto;
         display: flex;
-        align-items: center; /* Alinha verticalmente */
+        align-items: center;
     }
 
     .navbar-brand img {
-        height: 50px  !important; /* Ajuste conforme necessário */
-        max-width: 100%  !important;
+        height: 50px !important;
+        max-width: 100% !important;
     }
 
     .navbar-toggler {
-        margin-left: auto; /* Mantém o menu à direita */
+        margin-left: auto;
         display: flex;
-        align-items: center; /* Garante alinhamento */
+        align-items: center;
     }
 
-
-    /*cokkie*/
-    .cookie-banner {
-        padding: 10px;
+    .missao,
+    .section-title {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
-    .cookie-title {
-        font-size: 18px;
+    .chart-container {
+        height: 220px;
     }
 
-    .cookie-text {
-        font-size: 14px;
+    svg {
+        display: none;
     }
 
-    .cookie-buttons {
-        flex-direction: column;
-        gap: 10px;
+    .bannerMobile {
+        display: block;
     }
 
-    .btn-accept, .btn-decline {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-    .missao{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
-    }
-    .section-title{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
+    #vm-destaque-one {
+        display: none;
     }
 
+   #vm-destaque-novo{
+        display: block !important;
+        background-color: #00345e !important;
+        color: #ffffff;
+    }
 }
 
-/* medios */
+/* Para dispositivos entre 301px e 400px */
 @media (min-width: 301px) and (max-width: 400px) {
-    .banner{
+    .banner {
         display: none !important;
     }
+
     .navbar {
         display: flex;
-        align-items: center; /* Garante alinhamento vertical */
+        align-items: center;
         justify-content: space-between;
         padding: 0.5rem 1rem;
     }
 
     .navbar-brand {
-        margin-right: auto; /* Mantém a logo à esquerda */
+        margin-right: auto;
         display: flex;
-        align-items: center; /* Alinha verticalmente */
+        align-items: center;
     }
 
     .navbar-brand img {
-        height: 50px  !important; /* Ajuste conforme necessário */
-        max-width: 100%  !important;
-    }
-    .navbar-toggler {
-        margin-left: auto; /* Mantém o menu à direita */
-        display: flex;
-        align-items: center; /* Garante alinhamento */
-    }
-
-    .missao{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
-    }
-    .section-title{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
-    }
-  }
-
-
-/* muito pequenos */
-@media (min-width: 50px) and (max-width: 300px)  {
-    .banner{
-        display: none !important;
-    }
-    .navbar {
-        display: flex;
-        align-items: center; /* Garante alinhamento vertical */
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar-brand {
-        margin-right: auto; /* Mantém a logo à esquerda */
-        display: flex;
-        align-items: center; /* Alinha verticalmente */
-    }
-
-    .navbar-brand img {
-        height: 50px  !important; /* Ajuste conforme necessário */
-        max-width: 100%  !important;
+        height: 50px !important;
+        max-width: 100% !important;
     }
 
     .navbar-toggler {
-        margin-left: auto; /* Mantém o menu à direita */
+        margin-left: auto;
         display: flex;
-        align-items: center; /* Garante alinhamento */
+        align-items: center;
     }
 
-    .missao{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
+    .missao,
+    .section-title {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
-    .section-title{
-        white-space: normal; /* Permite que o texto quebre */
-        word-wrap: break-word; /* Quebra palavras longas */
-        overflow-wrap: break-word; /* Alternativa para quebra */
+    .chart-container {
+        height: 200px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .bannerMobile {
+        display: block;
+    }
+
+    /* Personalização para o banner */
+    .bannerMobile {
+        background-color: #dc3545;
+        /* Vermelho do Bootstrap */
+        color: white;
+    }
+
+    /* Personalização dos formulários */
+    .banner-form {
+        background-color: #ffffff;
+        border-color: #e0e0e0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .banner-text {
+        font-size: 1.25rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+        color: #dc3545;
+    }
+
+    .btn-light {
+        background-color: white;
+        color: #dc3545;
+        border: 1px solid #dc3545;
+    }
+
+    .btn-light:hover {
+        background-color: #f8d7da;
+        color: #dc3545;
+    }
+
+    .form-select,
+    .form-control {
+        background-color: #f8f9fa;
+        border-color: #ced4da;
+    }
+
+    #vm-destaque-one {
+        display: none;
+    }
+   #vm-destaque-novo{
+        display: block;
+        background-color: #00345e;
+        color: #ffffff;
     }
 }
 
+/* Para dispositivos entre 50px e 300px */
+@media (min-width: 50px) and (max-width: 300px) {
+    .banner {
+        display: none !important;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        height: 50px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .missao,
+    .section-title {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .chart-container {
+        height: 180px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .bannerMobile {
+        display: block;
+    }
+
+    #vm-destaque-one {
+        display: none;
+    }
+   #vm-destaque-novo{
+        display: block;
+        background-color: #00345e;
+        color: #ffffff;
+    }
+}

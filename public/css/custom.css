@@ -30,9 +30,9 @@
   }
 
 
-body {
+body, main , html {
     font-size: 14pt;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: #f8f9fa;
 }
 
@@ -90,7 +90,10 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 
 section{
     padding: 20px;
+}
 
+svg{
+    display: block;
 }
 
 .navbar{
@@ -140,7 +143,9 @@ section{
 .banner{
     display: block;
 }
-
+.bannerMobile{
+    display: none;
+}
 
 .banner{
     background:url('/arquivos/banner/2.png');
@@ -198,6 +203,9 @@ section{
 #vm-destaque-one{
     background-color: #00345e;
     margin-top: -26px;
+}
+#vm-destaque-novo{
+    display: hidden !important;
 }
 
 /* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
@@ -287,12 +295,6 @@ section{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
 }
 
-/* Layout do grid para duas colunas */
-@media (max-width: 576px) {
-    .col-12 {
-        width: 100%; /* Coloca os cards em uma �nica coluna em telas pequenas */
-    }
-}
 
 /* Estilo de fundo e espa�amento */
 .missao-card {
@@ -309,18 +311,6 @@ section{
     justify-content: center;
 }
 
-.col-sm-6 {
-    max-width: 50%; /* Dois cards por linha */
-    padding: 0 1rem; /* Espa�amento entre os cards */
-}
-
-.col-md-6 {
-    max-width: 50%;
-}
-
-.col-lg-3 {
-    max-width: 25%; /* Tr�s cards por linha em telas maiores */
-}
 
 
 /* Estilo para o curso */
@@ -451,25 +441,6 @@ btn-primary{
     padding: 20px 0;
 }
 
-/* Adaptação responsiva */
-@media (max-width: 768px) {
-    .depoimentos h2 {
-        font-size: 2rem;
-    }
-
-    .depoimento-text {
-        font-size: 1rem;
-    }
-
-    .depoimentos img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .stars {
-        font-size: 1.2rem;
-    }
-}
 
 
 
@@ -808,13 +779,6 @@ button.btn-newsletter:focus {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .checkout-section {
-        margin-top: 20px;
-    }
-}
-
-
 
 .checkout-section{
     background-color: #00345e;
@@ -895,11 +859,7 @@ hr {
     margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
-    .row-custom {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 .flexibilidade-section {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -1107,4 +1067,34 @@ hr {
 
 .dropdown-header.open i {
     transform: rotate(180deg); /* Gira o ícone ao abrir */
+}
+
+
+
+/* =======================anime====================================== */
+[data-anime] {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="left"].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0); /* Ajustado para mover para a direita */
+}
+
+[data-anime="right"].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.card-formulario {
+    width: 100%;
 }

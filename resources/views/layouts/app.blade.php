@@ -1,11 +1,10 @@
 <!-- resources/views/layouts/app.blade.php -->
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('arquivos/logos/7.png') }}">
     <title>DECOLA SCHOOL</title>
 
@@ -88,4 +87,27 @@
             });
         });
     });
+
+    const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+function animeScroll(){
+    ///distancia entre a barra e o topo do site
+    const windowTop = window.pageYOffset + (window.innerHeight*3)/4; //1268
+
+    target.forEach( (e) => {
+
+        if((windowTop) > e.offsetTop){
+            e.classList.add(animationClass);
+
+        }else{
+            e.classList.remove(animationClass);
+        }
+
+    });
+}
+window.addEventListener('scroll', function(){
+    animeScroll();
+});
+
     </script>
