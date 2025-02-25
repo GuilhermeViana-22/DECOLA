@@ -8,7 +8,7 @@
                 <!-- Texto Principal -->
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold">Consulta de Certificados</h1>
-                    <p class="lead">Digite o código do certificado e a data de emissão para verificar sua disponibilidade.</p>
+                    <p class="lead">Insira o código do certificado e a data de emissão para verificar sua disponibilidade.</p>
                 </div>
                 <!-- Ícone do Foguete Destacado -->
                 <div class="col-lg-6 text-center position-relative">
@@ -30,7 +30,7 @@
                             <h3 class="mb-0">Buscar Certificado</h3>
                         </div>
                         <div class="card-body p-4">
-                            <p class="text-muted text-center mb-4">Insira o código e a data de emissão do certificado.</p>
+                            <p class="text-muted text-center mb-4">Informe o código e a data de emissão do certificado.</p>
                             <form>
                                 <div class="mb-3">
                                     <label for="codigoCertificado" class="form-label">Código do Certificado</label>
