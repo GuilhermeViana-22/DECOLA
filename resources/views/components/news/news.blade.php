@@ -1,10 +1,10 @@
 <section class="newsletter-section">
     <div class="container text-center py-5">
         <div class="newsletter-box shadow-lg p-5 bg-white rounded">
-            <h2 class="text-primary">
+            <p class="text-primary">
                 <i class="fas fa-newspaper"></i> Assine nossa Newsletter
-            </h2>
-            <p class="text-muted">Fique por dentro das novidades da Decola de Soft Skills!</p>
+            </p>
+            <p class="text-muted" >Fique por dentro das novidades da Decola de Soft Skills!</p>
 
             <form action="{{ route('news') }}" method="POST">
                 @csrf <!-- Proteção contra CSRF -->

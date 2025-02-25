@@ -1,0 +1,48 @@
+/* Estilos para imagens no Navbar */
+.navbar-logo {
+    width: 100px !important;
+    height: auto;
+}
+
+/* Estilos para Banner */
+.banner-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para imagens dos Cursos */
+.curso-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.curso-imagem:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* Estilos para imagens no Footer */
+.footer-logo {
+    width: 120px;
+    height: auto;
+    filter: brightness(0.8);
+}
+
+/* Estilos para imagens de Depoimentos */
+.depoimento-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes gerais para imagens responsivas */
+.img-responsiva {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

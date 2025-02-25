@@ -1,0 +1,32 @@
+.dropdown-header {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-header:hover {
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-content li i {
+    margin-right: 8px;
+}
+
+.dropdown-content.open {
+    display: block;
+    max-height: 2000px;
+}

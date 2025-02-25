@@ -1,0 +1,28 @@
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    z-index: 99;
+    background: #7e31ff;
+    background: linear-gradient(to right, #ff3131, #ff6b6b);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    animation: effect 5s infinite ease-in;
+    margin-top: 160px;
+}
+#whatsapp-button:hover {
+    background: #690eff;
+    background: linear-gradient(to right, #ff0202, #ff6b6b);
+    color: white;
+}

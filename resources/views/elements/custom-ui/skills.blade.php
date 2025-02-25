@@ -1,13 +1,13 @@
-<div class="container mt-5">
-    <div class="row g-3">
+<div class="container">
+    <div class="row">
         <!-- Dropdown Flexibilidade -->
         <div class="col-12 col-md-6 col-sm-12">
             <section class="dropdown-section">
-                <div class="dropdown-header d-flex justify-content-between align-items-center p-3 rounded shadow-sm bg-light" onclick="toggleContent('flexibilidade-content', 'dropdown-icon')">
-                    <h5 class="mb-0"><i class="fas fa-handshake"></i> Flexibilidade</h5>
+                <div class="dropdown-header d-flex justify-content-between align-items-center" onclick="toggleContent('flexibilidade-content', 'dropdown-icon')">
+                    <h5><i class="fas fa-handshake"></i> Flexibilidade</h5>
                     <i class="fas fa-chevron-down" id="dropdown-icon"></i>
                 </div>
-                <div class="dropdown-content p-3 bg-light border-top" id="flexibilidade-content">
+                <div class="dropdown-content" id="flexibilidade-content">
                     <ul>
                         <li><i class="fas fa-calendar-alt"></i> Cronograma Geral e Ementa: Programação completa do curso.</li>
                         <li><i class="fas fa-chalkboard-teacher"></i> Convite e Aula Inaugural:
@@ -25,11 +25,11 @@
         <!-- Dropdown Módulos do Curso -->
         <div class="col-12 col-md-6 col-sm-12">
             <section class="dropdown-section">
-                <div class="dropdown-header d-flex justify-content-between align-items-center p-3 rounded shadow-sm bg-light" onclick="toggleContent('modulos-curso-content', 'modulos-dropdown-icon')">
-                    <h5 class="mb-0"><i class="fas fa-layer-group"></i> Módulos do Curso</h5>
+                <div class="dropdown-header d-flex justify-content-between align-items-center" onclick="toggleContent('modulos-curso-content', 'modulos-dropdown-icon')">
+                    <h5><i class="fas fa-layer-group"></i> Módulos do Curso</h5>
                     <i class="fas fa-chevron-down" id="modulos-dropdown-icon"></i>
                 </div>
-                <div class="dropdown-content p-3 bg-light border-top" id="modulos-curso-content">
+                <div class="dropdown-content" id="modulos-curso-content">
                     <ul>
                         <li><i class="fas fa-smile"></i> Felicidade</li>
                         <li><i class="fas fa-comments"></i> Comunicação</li>
@@ -50,43 +50,6 @@
     </div>
 </div>
 
-<style>
-    .dropdown-header {
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .dropdown-header:hover {
-        background-color: #f8f9fa;
-    }
-
-    .dropdown-content {
-        display: none;
-        transition: max-height 0.3s ease-out;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .dropdown-content ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dropdown-content li {
-        padding: 8px 0;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .dropdown-content li i {
-        margin-right: 8px;
-    }
-
-    .dropdown-content.open {
-        display: block;
-        max-height: 2000px; /* Large enough value to open */
-    }
-</style>
 
 <script>
     function toggleContent(contentId, iconId) {

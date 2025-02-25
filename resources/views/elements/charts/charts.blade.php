@@ -1,60 +1,67 @@
-<section>
-<h6 class="section-subtitle">Comparação de Desempenho - Estudantes com e sem Soft Skills</h6>
-<canvas id="barChart"></canvas>
+<section id="cursos" class="curso-container py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="section-title">Comparação de Desempenho - Estudantes com e sem Soft Skills</h2>
+        <div class="row justify-content-center">
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
 </section>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('barChart').getContext('2d');
+    const ctx = document.getElementById('barChart').getContext('2d');
 
-  const dadosComSoftSkills = [85, 90, 88, 80, 87]; // Dados para "Com Soft Skills"
-  const dadosSemSoftSkills = dadosComSoftSkills.map(valor => valor * 0.5); // Garantir que "Sem Soft Skills" seja 50% de "Com Soft Skills"
+    const dadosComSoftSkills = [85, 90, 88, 80, 87]; // Dados para "Com Soft Skills"
+    const dadosSemSoftSkills = dadosComSoftSkills.map(valor => valor *
+    0.5); // Garantir que "Sem Soft Skills" seja 50% de "Com Soft Skills"
 
-  const barChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Comunicação', 'Trabalho em Equipe', 'Liderança', 'Gestão de Tempo', 'Resolução de Problemas'],
-      datasets: [
-        {
-          label: 'Com Soft Skills',
-          data: dadosComSoftSkills,
-          backgroundColor: 'rgba(3, 22, 129, 0.7)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1
+    const barChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Comunicação', 'Trabalho em Equipe', 'Liderança', 'Gestão de Tempo',
+                'Resolução de Problemas'
+            ],
+            datasets: [{
+                    label: 'Com Soft Skills',
+                    data: dadosComSoftSkills,
+                    backgroundColor: 'rgba(3, 22, 129, 0.7)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Sem Soft Skills',
+                    data: dadosSemSoftSkills,
+                    backgroundColor: 'rgba(252, 26, 26, 0.7)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }
+            ]
         },
-        {
-          label: 'Sem Soft Skills',
-          data: dadosSemSoftSkills,
-          backgroundColor: 'rgba(252, 26, 26, 0.7)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      indexAxis: 'y', // Alterando para o gráfico usar o eixo X
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        tooltip: {
-          callbacks: {
-            label: function(tooltipItem) {
-              return tooltipItem.raw + '%';
+        options: {
+            responsive: true,
+            indexAxis: 'y', // Alterando para o gráfico usar o eixo X
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.raw + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    }
+                }
             }
-          }
         }
-      },
-      scales: {
-        x: {
-          beginAtZero: true,
-          ticks: {
-            callback: function(value) {
-              return value + '%';
-            }
-          }
-        }
-      }
-    }
-  });
+    });
 </script>

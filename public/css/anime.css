@@ -1,0 +1,68 @@
+
+/* start anime */
+[data-anime] {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="left"].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+   /* Ajustado para mover para a direita */
+}
+[data-anime="right"].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+/* end anime */
+
+
+/* start rocket*/
+
+
+svg{
+    display: block;
+}
+
+.rocket-wrapper {
+    position: relative;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+.rocket-icon {
+    max-height: 220px;
+    transition: transform 0.3s ease;
+}
+.rocket-icon:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+.navbar-brand img {
+    height: 90px !important;
+   /* Ajuste conforme necessário */
+    max-width: 100% !important;
+}
+.display-4:hover{
+    color: #fff;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-10px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+.skill{
+    margin-left: 10px
+}
+
+/* end rocket*/

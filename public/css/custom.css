@@ -1,783 +1,21 @@
-* {
-    padding: auto;
-    margin: 0 auto;
-    font-family: 'NomeDaFonte', sans-serif;
+.display-4{
+    text-align: left !important;
 }
-/* Resetando os ícones FontAwesome */
-.fas, .far, .fal, .fad, .fab {
-    all: unset; /* Remove todas as propriedades herdadas */
-    font-family: "Font Awesome 5 Free"; /* Restaura a fonte padrão */
-    font-weight: 900; /* Define um peso padrão */
-    display: inline-block; /* Garante alinhamento correto */
-}
-
-
-/* Controla a largura do scroll */
-::-webkit-scrollbar {
-    width: 8px; /* Ajuste a largura conforme necess�rio */
-  }
-
-  /* Controla o estilo da parte do scroll que pode ser arrastada */
-  ::-webkit-scrollbar-thumb {
-    background-color: #1e2a47; /* Azul escuro */
-    border-radius: 10px; /* Arredonda as bordas do scroll */
-  }
-
-  /* Controla o estilo da trilha do scroll (�rea de fundo) */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor de fundo do track */
-    border-radius: 10px;
-  }
-
-
-body, main , html {
-    font-size: 14pt;
-    overflow-x: hidden !important;
-    background-color: #f8f9fa;
-}
-
-
-/* Tipografia para h1 a h6 */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;  /* Fonte moderna e profissional */
-    font-weight: 700;  /* Negrito para destacar os títulos */
-    color: #333333;  /* Um cinza escuro para um toque mais sofisticado */
-    letter-spacing: -0.5px;  /* Leve ajuste de espaçamento entre letras para um toque mais elegante */
-    line-height: 1.2;  /* Ajuste no espaçamento entre linhas para uma leitura mais fluida */
-    transition: color 0.3s ease, transform 0.3s ease;  /* Transição suave para a cor e transformação */
-}
-
-/* Estilo para o h1 com destaque */
-h1 {
-    font-size: 2.5rem;  /* Tamanho grande para destaque */
-}
-
-/* Estilo para h2 */
-h2 {
-    font-size: 2rem;
-}
-
-/* Estilo para h3 */
-h3 {
-    font-size: 1.75rem;
-}
-
-/* Estilo para h4 */
-h4 {
-    font-size: 1.5rem;
-}
-
-/* Estilo para h5 */
-h5 {
-    font-size: 1.25rem;
-}
-
-/* Estilo para h6 */
-h6 {
-    font-size: 1.1rem;
-}
-
-/* Hover para todos os h1 a h6 */
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-
-    transform: translateY(-3px);  /* Efeito de elevação suave */
-}
-
-/* Adicionando um efeito sutil de sombra ao passar o mouse */
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para um toque 3D */
-}
-
-section{
-    padding: 20px;
-}
-
-svg{
-    display: block;
-}
-
-.navbar{
-    background-color: #ffffff !important;
-    height: auto;
-    color: #000000;
-    position-anchor: inherit;
-}
-
-.rocket-wrapper {
-    position: relative;
-    display: inline-block;
-    animation: float 3s ease-in-out infinite;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
-}
-.rocket-icon {
-    max-height: 220px;
-    transition: transform 0.3s ease;
-}
-.rocket-icon:hover {
-    transform: scale(1.1) rotate(-5deg);
-}
-
-.navbar-brand img {
-    height: 90px  !important; /* Ajuste conforme necessário */
-    max-width: 100%  !important;
-}
-
-.display-4:hover{
-    color: #fff;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-.skill{
-    margin-left: 10px
-}
-
-.btn-success{
-    border-radius: 0% !important;
-}
-
-.banner{
-    display: block;
-}
-.bannerMobile{
-    display: none;
-}
-
-.banner{
-    background:url('/arquivos/banner/2.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    color: #ffffff;
-    margin-bottom: 0;
-
-}
-
-.banner-form{
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 15%;
-}
-.banner-title {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: left;
-    padding: 20px;
-    color: #f6f6f6;  /* Cor base do texto */
-    transition: all 0.3s ease;  /* Transição suave para todos os efeitos */
-}
-
-.banner-title:hover {
-    color: #fff;  /* Cor clara no hover */
-    transform: translateY(-3px);  /* Efeito de elevação suave */
-    text-shadow: 0 2px 5px rgb(255, 255, 255);  /* Efeito de brilho sutil */
-}
-
-.banner-text{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    padding: 20px;
-}
-
-.top-bar {
-    background-color: #1a1a1a;
-    color: white;
-    font-size: 14px;
-    padding: 8px 0;
-}
-
-
-  .pipe {
-    color: white;
-    font-weight: bold;
-  }
-
-
-#vm-destaque-one{
-    background-color: #00345e;
-    margin-top: -26px;
-}
-#vm-destaque-novo{
-    display: none !important;
-}
-
-/* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
-.navbar-brand {
-    margin-left: 0 !important;
-    margin-left: 15% !important;
-}
-
-/* Remove o campo de pesquisa */
-.form-inline {
-    display: none;
-}
-
-/* Altera a cor do botão para vermelho */
-.btn-outline-success {
-    background-color: red !important;
-    border-color: red !important;
-    color: white !important;
-}
-
-.btn-outline-success:hover {
-    background-color: darkred !important;
-    border-color: darkred !important;
-}
-
-/* Estilo para h2 e h3 com gradiente e efeitos */
-.missao {
-    background-color: #f8f9fa;
-}
-.missao-card {
-    background: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-.missao-card:hover {
-    transform: scale(1.05);
-}
-.missao-icon i {
-    font-size: 2rem;
-    color: #007bff;
-}
-
-.missao-title:hover {
-    transform: scale(1.1);  /* Efeito de aumentar o título no hover */
-}
-/* Estilo para os �cones */
-.missao-icon i {
-    font-size: 2.5rem; /* Aumenta o tamanho dos �cones */
-    color: #002f6c; /* Cor azul Wizard */
-    transition: transform 0.3s ease; /* Efeito de transi��o */
-}
-
-/* Efeito de hover para os �cones */
-.missao-icon i:hover {
-    transform: scale(1.2); /* Aumenta um pouco o �cone no hover */
-}
-
-/* Alinhamento e estilo do t�tulo */
-.missao-title {
-    font-size: 2rem; /* Aumenta o tamanho do t�tulo */
-    font-weight: bold;
-    margin-top: 1rem;
-    color: #00345e; /* Cor do t�tulo */
-}
-
-/* Estilo para o texto do card */
-.missao-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555; /* Cor do texto */
-    margin-top: 1rem;
-}
-
-/* Estilo dos cards */
-.missao-card {
-    background-color: #ffffff; /* Fundo branco para os cards */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transi��o */
-    height: 100%;
-}
-
-/* Efeito de hover nos cards */
-.missao-card:hover {
-    transform: translateY(-10px); /* Eleva o card no hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
-}
-
-
-/* Estilo de fundo e espa�amento */
-.missao-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Ajuste do grid para desktop e mobile */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-
-/* Estilo para o curso */
-.price{
-
-    font-weight: bold !important;
-}
-
-.curso-card {
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.curso-card:hover {
-    transform: scale(1.05);
-}
-
-.curso-card:hover::after {
-    content: "Melhor preço somente hoje!";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #28a745;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    z-index: 1;
-}
-
-.curso-card .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.curso-card .ratings {
-    display: flex;
-}
-
-.curso-card .students {
-    font-size: 0.875rem;
-    color: #6c757d;
-}
-
-.curso-card .price {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
-
-.curso-card .badge {
-    font-size: 1rem;
-    padding: 8px 15px;
-    border-radius: 20px;
-}
-btn-primary{
-    border-radius: 0% !important;
-}
-/* Estilo para o curso */
-
-
-.cursor-gradient {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    width: 20px;
-    height: 20px;
-    transition: background 0.3s ease;
-    background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
-    background-size: 200% 200%;
-}
-
-
-/* Estilo para o título */
-.depoimentos h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ff4c4c;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilo para os depoimentos */
-.depoimento-text {
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.6;
-    color: #fff;
-    padding: 15px;
-}
-
-/* Estilo para as estrelas */
-.stars {
-    font-size: 1.5rem;
-}
-
-.star {
-    color: #ff4c4c;
-}
-
-/* Ajuste da imagem do usuário */
-.depoimentos img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 3px solid #ff4c4c;
-}
-
-/* Nome do usuário */
-.depoimentos p.mb-0 {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #fff;
-}
-
-/* Estilo para os cards dos depoimentos */
-.card-depoimentos {
-    background-color: #222;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilo para o carrossel */
-.carousel-inner {
-    padding: 20px 0;
-}
-
-
-
-
-/* Estilo para a seção da newsletter */
-.newsletter-section {
-
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 90;
-
-}
-
-.newsletter-box {
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 40px 30px;
-    margin: auto !important;
-    max-width: 700px !important;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    overflow: hidden;
-    background-color: #ffffff;
-
-}
-
-/* Título e descrição */
-.newsletter-box h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
-    background-clip: text;
-    color: transparent;
-    animation: gradient 3s ease infinite;
-}
-
-.newsletter-box p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin-bottom: 30px;
-    color: #000000;
-}
-
-.wave-top, .wave-bottom {
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-.wave-top {
-    top: 0;
-}
-.wave-bottom {
-    bottom: 0;
-}
-.newsletter-box {
-    max-width: 500px;
-    margin: auto;
-}
-
 
-@keyframes gradient {
-    0% {
-        background-position: 200% 0;
-    }
-    50% {
-        background-position: 0 100%;
-    }
-    100% {
-        background-position: 200% 0;
-    }
-}
-
-/* Formulário */
-.form-control {
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    border: 2px solid #ff0400;
-    background-color: #fff;
-}
-
-.form-control:focus {
-    border-color: #ff0400;
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 127, 80, 0.7);
-}
-
-button.btn-newsletter {
-    background-color: #ff0400;
-    border: none;
-    padding: 15px;
-    font-size: 1.2rem;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-button.btn-newsletter:hover {
-    background-color: #ff0400;
-    transform: translateY(-5px);  /* Efeito de elevação do botão */
-}
-
-button.btn-newsletter:focus {
-    outline: none;
-}
-
-/* Efeito de hover no ícone e botão */
-.newsletter-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-#rocketIcon{
-    position: fixed;
-    bottom: 200px;
-    right: 15px;
-    z-index: 99;
-    background: #7e31ff;
-    background: linear-gradient(to right, #ff3131, #ff6b6b);
-    border-radius: 50px;
-    color: #ffffff;
-    text-decoration: none;
-    width: 25px;
-    height: 25px;
-    padding: 20px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
-    animation: effect 5s infinite ease-in;
-    margin-top: 160px;
-}
-
-#rocketIcon:hover {
-    background: #690eff;
-    background: linear-gradient(to right, #ff0202, #ff6b6b);
-    color: white;
-
-}
-
-
-
-#whatsapp-button {
-    position: fixed;
-    bottom: 100px;
-    right: 15px;
-    z-index: 99;
-    background: #7e31ff;
-    background: linear-gradient(to right, #ff3131, #ff6b6b);
-    border-radius: 50px;
-    color: #ffffff;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
-    animation: effect 5s infinite ease-in;
-    margin-top: 160px;
-}
-
-#whatsapp-button:hover {
-    background: #690eff;
-    background: linear-gradient(to right, #ff0202, #ff6b6b);
-    color: white;
-
-}
-
-/*parte dos franqueados*/
-.banner-franqueado{
-    background:url('/arquivos/banner/3.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 100%;
-    color: #ffffff;
-    margin-bottom: 0;
-}
-.banner-suporte{
-    background:url('/arquivos/banner/3.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 100%;
-    color: #ffffff;
-    margin-bottom: 0;
-}
-
-
-/* resultados */
-.why-choose-us {
-    background-color: #f8f9fa;
-    font-family: 'Poppins', sans-serif;
-    color: #1a1a1a;
-  }
-
-  .section-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: #002f6c; /* Cor azul Wizard */
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .section-subtitle {
-    font-size: 32px;
-    font-weight: 700;
-    color: #002f6c; /* Cor azul Wizard */
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .section-subtitle-white {
-    font-size: 32px  !important;
-    font-weight: 700;
-    color: #ffffff !important;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-
-  .stat-box {
-    background: linear-gradient(135deg, #002f6c 0%, #0056b3 100%);
-    color: white;
-    border-radius: 12px;
-    padding: 40px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-  }
-
-  .stat-box:hover {
-    transform: translateY(-5px);
-  }
-
-  .percentage {
-    font-size: 64px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-
-  .stat-text {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .faq-section {
-    margin-top: 40px;
-  }
-
-  .faq-title {
-    font-size: 36px;
-    color: #002f6c;
-    font-weight: 700;
-  }
-
-  .faq-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  .btn-primary {
-    background-color: #e63946;
-    border: none;
-    padding: 12px 30px;
-    font-size: 18px;
-    font-weight: 600;
-    transition: background-color 0.3s;
-  }
-
-  .btn-primary:hover {
-    background-color: #d62839;
-  }
-
-/* end resultados */
-
-.logo-pagamento {
-    display: flex;
-    flex-direction: row;
-    object-fit: cover; /* Isso faz a imagem preencher o espa�o sem distorcer */
-    padding: 2px;
-}
-
-
-/*parte de checkout de pagamento do curso */
-.checkout-card-header {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Ajuste a altura conforme necess�rio */
-    overflow: hidden;
-}
-
-.video-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .checkout-title {
     text-align: left;
 }
-
 .checkout-description {
     text-align: left;
 }
-
 .checkout-card-body {
     background-color: #f7f7f7;
     padding: 20px;
 }
-
 .checkout-list {
     list-style-type: none;
     padding: 0;
 }
-
 .checkout-item {
     background-color: #e0e0e0;
     margin: 5px 0;
@@ -785,54 +23,44 @@ button.btn-newsletter:focus {
     display: flex;
     align-items: center;
 }
-
 .checkout-item .checkout-icon {
     margin-right: 10px;
 }
-
 .checkout-card-wrapper {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
 }
-
-
 .checkout-section{
     background-color: #00345e;
     color: #f1f1f1;
-
 }
-
 .checkout-title{
     font-size: 25pt;
 }
-
 .checkout-description{
     font-size: 16pt;
 }
-
 .checkout-card-wrapper{
     background-color: #ffffff;
     color: #000000;
 }
-
 .descricao-checkout{
     margin-top: 20vh !important;
 }
-
 hr {
-    border: none; /* Remove a borda padr�o */
-    height: 10px; /* Define a altura da linha */
-    background-color: #ffffff !important; /* Cor da linha */
+    border: none;
+   /* Remove a borda padr?o */
+    height: 10px;
+   /* Define a altura da linha */
+    background-color: #ffffff !important;
+   /* Cor da linha */
 }
-
-
 .row-custom {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
 }
-
 .column-custom {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -840,12 +68,10 @@ hr {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .column-custom:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-
 .icon-circle {
     width: 50px;
     height: 50px;
@@ -858,25 +84,20 @@ hr {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
 .column-custom h5 {
     font-size: 1.25rem;
     font-weight: bold;
 }
-
 .column-custom p {
     font-size: 1rem;
     color: #6c757d;
 }
-
 .footer-custom {
     text-align: center;
     color: #6c757d;
     font-size: 0.875rem;
     margin-top: 1rem;
 }
-
-
 .flexibilidade-section {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -884,7 +105,6 @@ hr {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .flexibilidade-header {
     display: flex;
     justify-content: space-between;
@@ -892,38 +112,31 @@ hr {
     align-items: center;
     background-color: #000000;
 }
-
 .flexibilidade-header h5 {
     margin: 0;
     font-size: 1.25rem;
     font-weight: bold;
 }
-
 .flexibilidade-content {
     display: none;
     margin-top: 1rem;
     font-size: 1rem;
     color: #6c757d;
 }
-
 .flexibilidade-content ul {
     list-style-type: none;
     padding-left: 1rem;
 }
-
 .flexibilidade-content ul li {
     margin-bottom: 0.5rem;
 }
-
 #dropdown-icon {
     font-size: 1.25rem;
     transition: transform 0.3s ease;
 }
-
 .open #dropdown-icon {
     transform: rotate(180deg);
 }
-
 .modulos-curso-section {
     background-color: #ffffff;
     border-radius: 8px;
@@ -931,45 +144,38 @@ hr {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .modulos-curso-header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     align-items: center;
 }
-
 .modulos-curso-header h5 {
     margin: 0;
     font-size: 1.25rem;
     font-weight: bold;
 }
-
 .modulos-curso-content {
     display: none;
     margin-top: 1rem;
     font-size: 1rem;
     color: #6c757d;
 }
-
 .modulos-curso-content ul {
     list-style-type: none;
     padding-left: 1rem;
 }
-
 .modulos-curso-content ul li {
     margin-bottom: 0.5rem;
 }
-
 #modulos-dropdown-icon {
     font-size: 1.25rem;
     transition: transform 0.3s ease;
 }
-
 .open #modulos-dropdown-icon {
     transform: rotate(180deg);
 }
-/*  Estilização dos cards de competências */
+/* Estiliza��o dos cards de compet�ncias */
 .competencias-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -978,7 +184,6 @@ hr {
     text-align: left;
     padding: 20px;
 }
-
 .competencias-card {
     background: #f9f9f9;
     padding: 20px;
@@ -986,60 +191,55 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 5px solid #bb2d3b;
-    min-height: 250px; /* Define um tamanho mínimo para manter a uniformidade */
+    min-height: 250px;
+   /* Define um tamanho m�nimo para manter a uniformidade */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .competencias-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
 .competencias-icon {
     font-size: 24px;
     color: #bb2d3b;
     margin-bottom: 10px;
 }
-
 .competencias-card h5 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
 }
-
 .competencias-card p {
     font-size: 14px;
     color: #555;
     line-height: 1.6;
 }
-
 .competencias-footer {
     margin-top: 15px;
     font-weight: bold;
     font-size: 14px;
     color: #bb2d3b;
 }
-
-
 /* final do card de competencias */
-
-
 .desempenho-container {
-    width: 80%; /* Define a largura da div em % */
-    height: 300px; /* Ajuste conforme necess�rio */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    display: flex; /* Mant�m a flexibilidade */
+    width: 80%;
+   /* Define a largura da div em % */
+    height: 300px;
+   /* Ajuste conforme necess?rio */
+    margin: 0 auto;
+   /* Centraliza horizontalmente */
+    display: flex;
+   /* Mant?m a flexibilidade */
 }
-
 .desempenho-img {
-    max-width:  100vh;
+    max-width: 100vh;
     height: auto;
 }
-   /* CSS atualizado com classes específicas */
-   .constructionc-container {
+/* CSS atualizado com classes espec�ficas */
+.constructionc-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1047,7 +247,6 @@ hr {
     background-color: #f4f4f4;
     text-align: center;
 }
-
 .constructionc-content {
     max-width: 90%;
     padding: 20px;
@@ -1055,63 +254,34 @@ hr {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 .constructionc-title {
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
 }
-
 .constructionc-text {
     font-size: 1.2rem;
     color: #666;
 }
-
 .recaptcha-container {
     display: flex;
     justify-content: center;
     margin: 15px 0;
 }
-
-
-/* Estilizando os ícones novamente */
+/* Estilizando os �cones novamente */
 .dropdown-header i {
-    color: #007bff; /* Azul padrão do Bootstrap */
-    font-size: 18px; /* Tamanho dos ícones */
+    color: #007bff;
+   /* Azul padr�o do Bootstrap */
+    font-size: 18px;
+   /* Tamanho dos �cones */
     transition: transform 0.3s ease-in-out;
 }
-
 .dropdown-header.open i {
-    transform: rotate(180deg); /* Gira o ícone ao abrir */
+    transform: rotate(180deg);
+   /* Gira o �cone ao abrir */
 }
-
-
-
-/* =======================anime====================================== */
-[data-anime] {
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-[data-anime="left"] {
-    transform: translate3d(-50px, 0, 0);
-}
-
-[data-anime="left"].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-[data-anime="right"] {
-    transform: translate3d(50px, 0, 0); /* Ajustado para mover para a direita */
-}
-
-[data-anime="right"].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
 .card-formulario {
     width: 100%;
 }
+
+

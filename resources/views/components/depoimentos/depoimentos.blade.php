@@ -1,4 +1,4 @@
-<section class="depoimentos py-5" style="background-color: #00345e;">
+<section class="depoimentos py-5">
     <div class="container text-center">
         <h2 class="section-subtitle-white text-white mb-5">O QUE DIZEM NOSSOS ALUNOS</h2>
         <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -44,10 +44,3 @@
         </div>
     </div>
 </section>
-
-<style>
-    .testimonial-box {
-        max-width: 600px;
-        text-align: center;
-    }
-</style>

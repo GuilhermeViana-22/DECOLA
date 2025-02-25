@@ -1,0 +1,37 @@
+/* Remover rolagem horizontal no eixo X */
+html, body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    width: 100%; /* Garante que o corpo e o HTML ocupem 100% da largura da tela */
+}
+
+/* Estilizando o body para evitar overflow */
+body {
+    font-family: 'NomeDaFonte', sans-serif; /* Defina a fonte desejada */
+    background-color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Impede o overflow horizontal no body */
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Ajustando o main para garantir o layout sem overflow */
+main {
+    overflow-x: hidden !important; /* Impede a rolagem horizontal dentro do main */
+    padding: 0;
+    width: 100%;
+}
+
+section{
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

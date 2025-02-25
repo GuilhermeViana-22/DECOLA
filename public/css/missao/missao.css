@@ -1,0 +1,78 @@
+/* Estilo para h2 e h3 com gradiente e efeitos */
+.missao {
+    background-color: #ffffff !important;
+}
+.missao-card {
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.missao-card:hover {
+    transform: scale(1.05);
+}
+.missao-icon i {
+    font-size: 2rem;
+    color: #007bff;
+}
+.missao-title:hover {
+    transform: scale(1.1);
+   /* Efeito de aumentar o título no hover */
+}
+/* Estilo para os ?cones */
+.missao-icon i {
+    font-size: 2.5rem;
+   /* Aumenta o tamanho dos ?cones */
+    color: #002f6c;
+   /* Cor azul Wizard */
+    transition: transform 0.3s ease;
+   /* Efeito de transi??o */
+}
+/* Efeito de hover para os ?cones */
+.missao-icon i:hover {
+    transform: scale(1.2);
+   /* Aumenta um pouco o ?cone no hover */
+}
+/* Alinhamento e estilo do t?tulo */
+.missao-title {
+    font-size: 2rem;
+   /* Aumenta o tamanho do t?tulo */
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #00345e;
+   /* Cor do t?tulo */
+}
+/* Estilo para o texto do card */
+.missao-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+   /* Cor do texto */
+    margin-top: 1rem;
+}
+/* Estilo dos cards */
+.missao-card {
+    background-color: #ffffff;
+   /* Fundo branco para os cards */
+    border-radius: 10px;
+   /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   /* Sombra suave */
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   /* Efeito de transi??o */
+    height: 100%;
+}
+/* Efeito de hover nos cards */
+.missao-card:hover {
+    transform: translateY(-10px);
+   /* Eleva o card no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+   /* Aumenta a sombra */
+}
+/* Estilo de fundo e espa?amento */
+.missao-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

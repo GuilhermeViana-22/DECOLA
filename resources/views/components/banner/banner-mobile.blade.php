@@ -1,4 +1,4 @@
-<section class="bannerMobile py-5 bg-danger text-white">
+<div class="bannerMobile py-5 bg-danger text-white">
     <div class="row justify-content-center">
         <!-- Texto Motivacional (Esquerda) -->
         <div class="col-12 text-center mb-4">
@@ -94,4 +94,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

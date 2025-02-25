@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Seção de Banner -->
-<section class="bg-danger text-white py-5 position-relative">
+<div class="bg-danger text-white py-5 position-relative">
     <div class="container">
         <div class="row align-items-center">
             <!-- Texto Principal -->
@@ -13,13 +13,13 @@
             </div>
             <!-- Ícone do Foguete Destacado -->
             <div class="col-lg-6 text-center position-relative">
-                <div class="rocket-wrapper">
+                <div class="div">
                     <img src="https://cdn-icons-png.flaticon.com/512/744/744929.png" alt="Foguete" class="img-fluid rocket-icon">
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- Carrossel de Instrutores -->
 <div class="container py-5">
@@ -27,7 +27,7 @@
         <div class="carousel-inner">
             <!-- Professor 1 -->
             <div class="carousel-item active">
-                <div class="card border-0 p-4" style="background: #f8f9fa;">
+                <div class="card border-0 p-4" >
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
                             <img src="{{ asset('arquivos/professor/felipe.png') }}" alt="Felipe Escaleira" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
@@ -43,7 +43,7 @@
 
             <!-- Professor 2 -->
             <div class="carousel-item">
-                <div class="card border-0 p-4" style="background: #f8f9fa;">
+                <div class="card border-0 p-4" >
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
                             <img src="{{ asset('arquivos/professor/carolina.png') }}" alt="Ana Silva" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
@@ -59,7 +59,7 @@
 
             <!-- Professor 3 -->
             <div class="carousel-item">
-                <div class="card border-0 p-4" style="background: #f8f9fa;">
+                <div class="card border-0 p-4" >
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
                             <img src="{{ asset('arquivos/professor/estevam.png') }}" alt="Carlos Mendes" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">
@@ -75,7 +75,7 @@
 
             <!-- Professor 4 -->
             <div class="carousel-item">
-                <div class="card border-0 p-4" style="background: #f8f9fa;">
+                <div class="card border-0 p-4" >
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center py-4">
                             <img src="{{ asset('arquivos/professor/barreto.png') }}" alt="Carlos Mendes" class="rounded-circle img-fluid" style="max-width: 300px; filter: brightness(1.2); border: 5px solid red;">

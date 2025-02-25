@@ -1,4 +1,4 @@
-<section class="banner py-5">
+<div class="banner py-5">
     <div class="container">
       <div class="row align-items-center">
         <!-- Texto Motivacional (Esquerda) -->
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <span><a target="_blank" href="https://api.whatsapp.com/send?phone=5511963245178" id="whatsapp-button"><i id="whatsapp" class="fab fa-whatsapp animate__animated animate__jello"></i></a></span>
 

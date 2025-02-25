@@ -1,0 +1,78 @@
+
+.banner{
+    display: block;
+}
+.bannerMobile{
+    display: none;
+}
+.banner{
+    background:url('/arquivos/banner/2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.banner-form{
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 15%;
+}
+.banner-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+    color: #f6f6f6;
+   /* Cor base do texto */
+    transition: all 0.3s ease;
+   /* Transição suave para todos os efeitos */
+}
+.banner-title:hover {
+    color: #fff;
+   /* Cor clara no hover */
+    transform: translateY(-3px);
+   /* Efeito de elevação suave */
+    text-shadow: 0 2px 5px rgb(255, 255, 255);
+   /* Efeito de brilho sutil */
+}
+.banner-text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.banner-franqueado{
+    background:url('/arquivos/banner/3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.banner-suporte{
+    background:url('/arquivos/banner/3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.top-bar {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+}
+.pipe {
+    color: white;
+    font-weight: bold;
+}
