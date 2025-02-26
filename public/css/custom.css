@@ -299,4 +299,39 @@ hr {
     object-fit: contain; /* Mantém a proporção das imagens sem cortar */
     display: block; /* Evita margens extras */
     margin: 0 auto; /* Centraliza dentro da coluna */
+} /* Alterando o fundo e borda para um tom mais suave */
+.newsletter-section {
+    background-color: #f9f9f9;
+    padding-top: 60px;
+}
+
+.newsletter-box {
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de hover no botão */
+.newsletter-box button:hover {
+    background-color: #001f4d;
+    transform: scale(1.05);
+}
+
+/* Estilo do título */
+.newsletter-box .text-primary {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #002f6c;
+}
+
+/* Texto secundário */
+.newsletter-box .text-secondary {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Adicionando borda e sombra ao input */
+.form-control {
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
 }

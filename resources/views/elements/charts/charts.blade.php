@@ -1,6 +1,6 @@
 <section id="cursos" class="curso-container py-5" style="background-color: #f8f9fa;">
     <div class="container">
-        <h2 class="section-title">Comparação de Desempenho - Estudantes com e sem Soft Skills</h2>
+        <h2 class="text-danger fs-1">Comparação de Desempenho - Estudantes com e sem Soft Skills</h2>
         <div class="row justify-content-center">
             <canvas id="barChart"></canvas>
         </div>
