@@ -15,14 +15,13 @@ function gerarSlug($nome) {
     return $slug;
 }
 ?>
-
 <section id="cursos" class="curso-container py-5" style="background-color: #f8f9fa;">
     <div class="container">
         <h2 class="section-title">Principais cursos</h2>
         <div class="row justify-content-center">
             <?php foreach ($unidades as $unidade) :
                 $slug = gerarSlug($unidade); ?>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"data-anime="left">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4" data-anime="left">
                     <div class="curso-card card shadow-lg border-0 rounded-lg position-relative">
                         <img src="<?= asset('extra-images/shop-gird-9.jpg') ?>" class="card-img-top" alt="Curso Soft-skills">
                         <div class="card-body text-center">
@@ -44,7 +43,7 @@ function gerarSlug($nome) {
                             </div>
                         </div>
                         <a href="https://decola.eadplataforma.app/curso/<?= $slug ?>" class="btn btn-primary w-100 py-3 text-white fs-5 fw-bold">
-                             <?= $unidade ?>
+                            <?= $unidade ?>
                         </a>
                     </div>
                 </div>
@@ -52,3 +51,22 @@ function gerarSlug($nome) {
         </div>
     </div>
 </section>
+
+<style>
+    @media (max-width: 980px) {
+        .curso-container .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .curso-container .col-12,
+        .curso-container .col-sm-4,
+        .curso-container .col-md-4,
+        .curso-container .col-lg-4 {
+            width: 100%;
+            max-width: 500px; /* Limita o tamanho */
+            margin-bottom: 20px; /* Adiciona um espaçamento entre os cards */
+        }
+    }
+</style>

@@ -2,7 +2,7 @@
     <div class="row align-items-center">
         <!-- Imagem à esquerda -->
         <div class="col-md-6 text-center">
-            <img src="{{ asset('arquivos/logos/5.png') }}" alt="Imagem Motivacional" class="img-fluid rounded" width="40%">
+            <img src="{{ asset('arquivos/logos/5.png') }}" alt="Imagem Motivacional" class="img-fluid rounded motivacional" width="40%">
         </div>
 
         <!-- Lista de frases alinhadas -->
@@ -52,7 +52,7 @@
 <div id="vm-destaque-novo">
       <!-- Imagem à direita -->
       <div class="col-md-6 text-center new-image-container">
-        <img src="{{ asset('arquivos/logos/5.png') }}" alt="Imagem Motivacional" class="img-fluid rounded new-image" width="40%">
+        <img src="{{ asset('arquivos/logos/5.png') }}" alt="Imagem Motivacional" class="img-fluid rounded new-image motivacional" width="40%">
     </div>
     <div class="row align-items-center new-div">
         <!-- Lista ordenada à esquerda -->

@@ -53,15 +53,14 @@
     <footer>
         @include('components.footer.footer')
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ asset('js/chart.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <script src="{{ asset('js/chart.js') }}"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             if (window.location.hash) {
