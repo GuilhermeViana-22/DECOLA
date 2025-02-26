@@ -1,6 +1,14 @@
 .display-4{
     text-align: left !important;
 }
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #002f6c;
+   /* Cor azul Wizard */
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .checkout-title {
     text-align: left;
@@ -175,7 +183,7 @@ hr {
 .open #modulos-dropdown-icon {
     transform: rotate(180deg);
 }
-/* Estilização dos cards de competências */
+/* Estilizaï¿½ï¿½o dos cards de competï¿½ncias */
 .competencias-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,7 +200,7 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 5px solid #bb2d3b;
     min-height: 250px;
-   /* Define um tamanho mínimo para manter a uniformidade */
+   /* Define um tamanho mï¿½nimo para manter a uniformidade */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -238,7 +246,7 @@ hr {
     max-width: 100vh;
     height: auto;
 }
-/* CSS atualizado com classes específicas */
+/* CSS atualizado com classes especï¿½ficas */
 .constructionc-container {
     display: flex;
     justify-content: center;
@@ -268,20 +276,27 @@ hr {
     justify-content: center;
     margin: 15px 0;
 }
-/* Estilizando os ícones novamente */
+/* Estilizando os ï¿½cones novamente */
 .dropdown-header i {
     color: #007bff;
-   /* Azul padrão do Bootstrap */
+   /* Azul padrï¿½o do Bootstrap */
     font-size: 18px;
-   /* Tamanho dos ícones */
+   /* Tamanho dos ï¿½cones */
     transition: transform 0.3s ease-in-out;
 }
 .dropdown-header.open i {
     transform: rotate(180deg);
-   /* Gira o ícone ao abrir */
+   /* Gira o ï¿½cone ao abrir */
 }
 .card-formulario {
     width: 100%;
 }
 
 
+.pagamento {
+    width: 80px;  /* Defina um tamanho fixo para manter a consistÃªncia */
+    height: 50px; /* Altura fixa para evitar imagens desalinhadas */
+    object-fit: contain; /* MantÃ©m a proporÃ§Ã£o das imagens sem cortar */
+    display: block; /* Evita margens extras */
+    margin: 0 auto; /* Centraliza dentro da coluna */
+}

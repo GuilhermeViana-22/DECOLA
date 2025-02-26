@@ -8,7 +8,5 @@
     @include('components.curso.curso')
     @include('components.depoimentos.depoimentos')
     @include('elements.charts.charts')
-    @include('elements.custom-ui.card-skills')
-    @include('elements.custom-ui.skills')
     @include('components.news.news')
 @endsection

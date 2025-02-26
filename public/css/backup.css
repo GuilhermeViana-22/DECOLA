@@ -3,14 +3,14 @@
     margin: 0 auto;
     font-family: 'NomeDaFonte', sans-serif;
 }
-/* Resetando os ícones FontAwesome */
+/* Resetando os ï¿½cones FontAwesome */
 .fas, .far, .fal, .fad, .fab {
     all: unset;
    /* Remove todas as propriedades herdadas */
     font-family: "Font Awesome 5 Free";
-   /* Restaura a fonte padrão */
+   /* Restaura a fonte padrï¿½o */
     font-weight: 900;
-   /* Define um peso padrão */
+   /* Define um peso padrï¿½o */
     display: inline-block;
    /* Garante alinhamento correto */
 }
@@ -42,15 +42,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
    /* Fonte moderna e profissional */
     font-weight: 700;
-   /* Negrito para destacar os títulos */
+   /* Negrito para destacar os tï¿½tulos */
     color: #333333;
    /* Um cinza escuro para um toque mais sofisticado */
     letter-spacing: -0.5px;
-   /* Leve ajuste de espaçamento entre letras para um toque mais elegante */
+   /* Leve ajuste de espaï¿½amento entre letras para um toque mais elegante */
     line-height: 1.2;
-   /* Ajuste no espaçamento entre linhas para uma leitura mais fluida */
+   /* Ajuste no espaï¿½amento entre linhas para uma leitura mais fluida */
     transition: color 0.3s ease, transform 0.3s ease;
-   /* Transição suave para a cor e transformação */
+   /* Transiï¿½ï¿½o suave para a cor e transformaï¿½ï¿½o */
 }
 /* Estilo para o h1 com destaque */
 h1 {
@@ -80,7 +80,7 @@ h6 {
 /* Hover para todos os h1 a h6 */
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     transform: translateY(-3px);
-   /* Efeito de elevação suave */
+   /* Efeito de elevaï¿½ï¿½o suave */
 }
 /* Adicionando um efeito sutil de sombra ao passar o mouse */
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
@@ -163,7 +163,7 @@ section{
 } */
 
 
-/* Alinha a marca (Navbar) à esquerda, mesmo em dispositivos móveis */
+/* Alinha a marca (Navbar) ï¿½ esquerda, mesmo em dispositivos mï¿½veis */
 .navbar-brand {
     margin-left: 0 !important;
     margin-left: 15% !important;
@@ -172,7 +172,7 @@ section{
 .form-inline {
     display: none;
 }
-/* Altera a cor do botão para vermelho */
+/* Altera a cor do botï¿½o para vermelho */
 .btn-outline-success {
     background-color: red !important;
     border-color: red !important;
@@ -197,7 +197,7 @@ section{
     transform: scale(1.05);
 }
 .curso-card:hover::after {
-    content: "Melhor preço somente hoje!";
+    content: "Melhor preï¿½o somente hoje!";
     position: absolute;
     top: 10px;
     right: 10px;
@@ -244,7 +244,7 @@ btn-primary{
     background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
     background-size: 200% 200%;
 }
-/* Estilo para o título */
+/* Estilo para o tï¿½tulo */
 .depoimentos h2 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -268,14 +268,14 @@ btn-primary{
 .star {
     color: #ff4c4c;
 }
-/* Ajuste da imagem do usuário */
+/* Ajuste da imagem do usuï¿½rio */
 .depoimentos img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 3px solid #ff4c4c;
 }
-/* Nome do usuário */
+/* Nome do usuï¿½rio */
 .depoimentos p.mb-0 {
     font-weight: bold;
     font-size: 1rem;
@@ -292,7 +292,7 @@ btn-primary{
 .carousel-inner {
     padding: 20px 0;
 }
-/* Estilo para a seção da newsletter */
+/* Estilo para a seï¿½ï¿½o da newsletter */
 .newsletter-section {
     padding: 50px 0;
     display: flex;
@@ -311,7 +311,7 @@ btn-primary{
     overflow: hidden;
     background-color: #ffffff;
 }
-/* Título e descrição */
+/* Tï¿½tulo e descriï¿½ï¿½o */
 .newsletter-box h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -354,7 +354,7 @@ btn-primary{
         background-position: 200% 0;
    }
 }
-/* Formulário */
+/* Formulï¿½rio */
 .form-control {
     border-radius: 10px;
     padding: 15px;
@@ -382,12 +382,12 @@ button.btn-newsletter {
 button.btn-newsletter:hover {
     background-color: #ff0400;
     transform: translateY(-5px);
-   /* Efeito de elevação do botão */
+   /* Efeito de elevaï¿½ï¿½o do botï¿½o */
 }
 button.btn-newsletter:focus {
     outline: none;
 }
-/* Efeito de hover no ícone e botão */
+/* Efeito de hover no ï¿½cone e botï¿½o */
 .newsletter-box:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

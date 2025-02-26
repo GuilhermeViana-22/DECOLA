@@ -1,4 +1,13 @@
 /* Estilo para h2 e h3 com gradiente e efeitos */
+/* Estilo do banner subtitle */
+.banner-subtitle {
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+    color: #00345e;
+}
+
+
 .missao {
     background-color: #ffffff !important;
 }
@@ -16,7 +25,7 @@
 }
 .missao-title:hover {
     transform: scale(1.1);
-   /* Efeito de aumentar o título no hover */
+   /* Efeito de aumentar o tï¿½tulo no hover */
 }
 /* Estilo para os ?cones */
 .missao-icon i {
@@ -73,6 +82,6 @@
 .missao-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
 }
