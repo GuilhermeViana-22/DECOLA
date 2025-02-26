@@ -12,13 +12,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ route('home') }}">Início <span class="sr-only">(current)</span></a>
             </li>
-
-            <!-- Unidades -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('home') }}#missao">Nossa missão</a>
             </li>
-
-            <!-- Quem Somos -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="cursoDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Cursos
