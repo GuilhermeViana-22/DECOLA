@@ -18,7 +18,8 @@
 .banner-form{
     background-color: #ffffff;
     color: #000000;
-    margin-top: 15%;
+    margin-bottom: 15%;
+
 }
 .banner-title {
     font-size: 60px;
@@ -28,13 +29,13 @@
     color: #f6f6f6;
    /* Cor base do texto */
     transition: all 0.3s ease;
-   /* Transição suave para todos os efeitos */
+   /* Transiï¿½ï¿½o suave para todos os efeitos */
 }
 .banner-title:hover {
     color: #fff;
    /* Cor clara no hover */
     transform: translateY(-3px);
-   /* Efeito de elevação suave */
+   /* Efeito de elevaï¿½ï¿½o suave */
     text-shadow: 0 2px 5px rgb(255, 255, 255);
    /* Efeito de brilho sutil */
 }

@@ -8,7 +8,84 @@
     /* Centraliza o gráfico */
 }
 
+@media (min-width: 701px) and (max-width: 990px) {
+    .banner {
+        display: none !important;
+    }
 
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        height: 50px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .missao,
+    .section-title {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .banner-text {
+        font-size: 1.6rem;
+    }
+
+    .motivacional{
+        margin-top: 20px !important;
+        padding: 10px 10px 10px 10px !important;
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .bannerMobile {
+        display: block;
+        background: rgb(187,45,59);
+        background: linear-gradient(48deg, rgba(187,45,59,1) 34%, rgba(255,27,49,1) 69%, rgba(162,0,16,1) 92%);
+    }
+
+    #vm-destaque-one {
+        display: none;
+    }
+
+    #vm-destaque-novo {
+        display: block !important;
+        background-color: #00345e;
+        color: #ffffff;
+    }
+
+    #barChartDesktok {
+        display: none;
+    }
+}
 
 /* Estilos de responsividade */
 @media (min-width: 601px) and (max-width: 700px) {
