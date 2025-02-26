@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Seção de Banner -->
-    <section class="bg-danger text-white py-5 position-relative">
+    <div class="bg-danger text-white py-5 position-relative">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Texto Principal -->
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Seção de Formulário -->
     <section class="py-5 bg-light">

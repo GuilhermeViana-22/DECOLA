@@ -1,0 +1,39 @@
+nav{
+    background-color: #ffffff !important;
+}
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: left !important;
+    width: 100% !important;
+
+}
+
+.navbar-logo {
+    height: 130px !important;
+    width: auto !important;
+    padding: 0 20px !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+
+}
+
+
+
+
+.nav-link {
+    text-decoration: none !important;
+    color: black !important;
+    padding: 10px !important;
+}
+
+.nav-link:hover {
+    color: red !important;
+}
+
+.btn-danger {
+    padding: 8px 15px !important;
+    border-radius: 5px !important;
+}

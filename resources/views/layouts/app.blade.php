@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('arquivos/logos/7.png') }}">
     <title>DECOLA SCHOOL</title>
+    <link href="{{ asset('css/nav/nav.css') }}" rel="stylesheet">
     <link href="{{ asset('css/anime.css') }}" rel="stylesheet">
     <link href="{{ asset('css/icon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/missao/missao.css') }}" rel="stylesheet">
@@ -17,14 +18,13 @@
     <link href="{{ asset('css/banner/banner.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+
 
     <!-- CDN do FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <!-- Link para o arquivo CSS do Bootstrap, que fornece uma estrutura de estilo responsiva e componentes prontos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Link para fontes personalizadas do Google Fonts, permitindo o uso de fontes com diferentes pesos -->
     <link href="https://fonts.googleapis.com/css2?family=NomeDaFonte:wght@400;700&display=swap" rel="stylesheet">
@@ -54,18 +54,14 @@
         @include('components.footer.footer')
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="{{ asset('js/chart.js') }}"></script>
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <script src="{{ asset('js/chart.js') }}"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             if (window.location.hash) {
@@ -106,7 +102,29 @@
         window.addEventListener('scroll', function() {
             animeScroll();
         });
+
+
     </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Ativar dropdowns manualmente para Bootstrap 5
+        var dropdownElements = document.querySelectorAll('.dropdown-toggle');
+        dropdownElements.forEach(function (dropdown) {
+            new bootstrap.Dropdown(dropdown);
+        });
+
+        // Suavizar rolagem para âncoras com hash
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: "smooth" });
+                }, 200);
+            }
+        }
+    });
+</script>
 </body>
 
 </html>
