@@ -10,16 +10,16 @@ body {
     box-sizing: border-box;
 }
 
-/* Ajustando o estilo de títulos principais (h1) */
+/* Ajustando o estilo de tï¿½tulos principais (h1) */
 h1 {
-    font-size: 2.5rem; /* Tamanho grande para destacar o título principal */
+    font-size: 2.5rem; /* Tamanho grande para destacar o tï¿½tulo principal */
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px; /* Espaï¿½amento abaixo do tï¿½tulo */
     text-align: center; /* Alinhamento centralizado */
 }
 
-/* Ajustando h2 (subtítulos importantes) */
+/* Ajustando h2 (subtï¿½tulos importantes) */
 h2 {
     font-size: 2rem; /* Tamanho menor que h1, mas ainda destacado */
     font-weight: 700;
@@ -29,7 +29,7 @@ h2 {
     text-align: center; /* Alinhamento centralizado */
 }
 
-/* Ajustando h3 (subtítulos de seções menores) */
+/* Ajustando h3 (subtï¿½tulos de seï¿½ï¿½es menores) */
 h3 {
     font-size: 1.75rem;
     font-weight: 600;
@@ -38,7 +38,7 @@ h3 {
     text-align: left;
 }
 
-/* Ajustando h4 (subtítulos secundários) */
+/* Ajustando h4 (subtï¿½tulos secundï¿½rios) */
 h4 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -46,7 +46,7 @@ h4 {
     line-height: 1.4;
 }
 
-/* Ajustando h5 e h6 (subtítulos menores) */
+/* Ajustando h5 e h6 (subtï¿½tulos menores) */
 h5, h6 {
     font-size: 1.25rem;
     font-weight: 500;
@@ -54,7 +54,7 @@ h5, h6 {
     line-height: 1.5;
 }
 
-/* Estilizando os parágrafos (p) */
+/* Estilizando os parï¿½grafos (p) */
 p {
     font-size: 1rem;
     font-weight: 400;
@@ -78,12 +78,9 @@ a {
     font-weight: 500;
 }
 
-a:hover {
-    color: #FF5733; /* Cor ao passar o mouse */
-    text-decoration: underline;
-}
 
-/* Estilo para blocos de citação (blockquote) */
+
+/* Estilo para blocos de citaï¿½ï¿½o (blockquote) */
 blockquote {
     font-size: 1.2rem;
     font-style: italic;
@@ -113,7 +110,7 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Estilo para botões */
+/* Estilo para botï¿½es */
 button, .btn {
     font-size: 1rem;
     font-weight: 500;
@@ -126,11 +123,9 @@ button, .btn {
     transition: background-color 0.3s;
 }
 
-button:hover, .btn:hover {
-    background-color: #FF5733;
-}
 
-/* Definindo o estilo de texto para elementos com animação */
+
+/* Definindo o estilo de texto para elementos com animaï¿½ï¿½o */
 [data-anime] {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -154,9 +149,6 @@ footer a {
     text-decoration: underline;
 }
 
-footer a:hover {
-    color: #FF5733;
-}
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 
-<section class="newsletter-section" data-anime="right">
+<div class="svg-background" data-anime="right">
     <div class="container text-center py-5">
         <div class="newsletter-box shadow-lg p-5 bg-light rounded border" style="border-color: #002f6c;">
             <p class="text-danger fs-3">
@@ -33,28 +33,22 @@
             </form>
         </div>
     </div>
-</section>
+</div>
 
 
 
-<section class="newsletter-section" data-anime="right">
-    <div class="container text-center py-5">
-        <div class="newsletter-box shadow-lg p-5 bg-white rounded">
-            <div class="row">
-                <div class="col-12 col-md-6 mb-2">
-                    <img src="{{ asset('arquivos/cards/3.png') }}" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6 mb-2">
-                    <img src="{{ asset('arquivos/cards/2.png') }}" class="img-fluid">
-                </div>
+<section class=" d-flex flex-column align-items-center text-center py-4" data-anime="right">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 mb-3">
+                <img src="{{ asset('arquivos/cards/3.png') }}" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-8 mb-3">
+                <img src="{{ asset('arquivos/cards/2.png') }}" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>
 </section>
-<!-- Script do reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
 
 
 

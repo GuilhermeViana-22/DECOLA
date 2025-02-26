@@ -65,6 +65,9 @@
         background-color: #00345e;
         color: #ffffff;
     }
+    #barChartDesktok{
+        display: none;
+    }
 }
 
 /* Para dispositivos entre 401px e 600px */
@@ -124,6 +127,9 @@
         display: block !important;
         background-color: #00345e !important;
         color: #ffffff;
+    }
+    #barChartDesktok{
+        display: none;
     }
 }
 
@@ -229,6 +235,9 @@
         background-color: #00345e;
         color: #ffffff;
     }
+    #barChartDesktok{
+        display: none;
+    }
 }
 
 /* Para dispositivos entre 50px e 300px */
@@ -287,5 +296,9 @@
         display: block;
         background-color: #00345e;
         color: #ffffff;
+    }
+
+    #barChartDesktok{
+        display: none;
     }
 }
