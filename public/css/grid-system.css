@@ -20,38 +20,7 @@ body {
     color: #333;
     overflow-x: hidden; /* Impede o overflow horizontal no body */
     padding: 0;
- 
-}
-.navbar {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 0px 20px !important;
-    width: 100% !important;
-}
 
-.navbar-brand {
-    margin-right: auto !important;
-}
-
-.navbar-logo {
-    height: 100px !important; /* Ajuste conforme necessário */
-}
-
-.navbar-collapse {
-    display: flex !important;
-    justify-content: flex-end !important;
-    width: 100% !important;
-}
-
-.navbar-nav {
-    margin-left: auto !important;
-    display: flex !important;
-    flex-direction: row !important;
-}
-
-.nav-item {
-    margin-left: 15px !important;
 }
 
 .row {
