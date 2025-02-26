@@ -1,0 +1,391 @@
+/* ============================
+   Reset e Configurações Globais
+=============================== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body, html, main {
+   font-size: 14pt;
+   overflow-x: hidden !important;
+   background-color: #f8f9fa;
+   font-family: 'NomeDaFonte', sans-serif;
+ }
+ 
+ /* ============================
+    FontAwesome Reset
+ =============================== */
+ .fas, .far, .fal, .fad, .fab {
+   all: unset; /* Remove propriedades herdadas */
+   font-family: "Font Awesome 5 Free"; /* Restaura a fonte padrão */
+   font-weight: 900; /* Peso padrão */
+   display: inline-block;
+ }
+ 
+ /* ============================
+    Scrollbar Customizada (Webkit)
+ =============================== */
+ ::-webkit-scrollbar {
+   width: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background-color: #1e2a47; /* Azul escuro */
+   border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+ }
+ 
+ /* ============================
+    Tipografia (Headings)
+ =============================== */
+ h1, h2, h3, h4, h5, h6 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   color: #333333;
+   letter-spacing: -0.5px;
+   line-height: 1.2;
+   transition: color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ h1 { font-size: 2.5rem; }
+ h2 { font-size: 2rem; }
+ h3 { font-size: 1.75rem; }
+ h4 { font-size: 1.5rem; }
+ h5 { font-size: 1.25rem; }
+ h6 { font-size: 1.1rem; }
+ 
+ /* Hover para títulos */
+ h1:hover,
+ h2:hover,
+ h3:hover,
+ h4:hover,
+ h5:hover,
+ h6:hover {
+   transform: translateY(-3px);
+   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* ============================
+    Seções e Layout
+ =============================== */
+ section {
+   padding: 20px;
+ }
+ 
+ /* ============================
+    Navbar
+ =============================== */
+ .navbar {
+   background-color: #ffffff !important;
+   height: auto;
+   color: #000000;
+   position: relative; /* Substituindo propriedade inválida */
+ }
+ 
+ .navbar-brand {
+   margin-left: 15% !important;
+ }
+ 
+ .form-inline {
+   display: none;
+ }
+ 
+ /* ============================
+    Botões
+ =============================== */
+ .btn-success {
+   border-radius: 0 !important;
+ }
+ 
+ .btn-outline-success {
+   background-color: red !important;
+   border-color: red !important;
+   color: white !important;
+ }
+ .btn-outline-success:hover {
+   background-color: darkred !important;
+   border-color: darkred !important;
+ }
+ 
+ .btn-primary {
+   background-color: #e63946;
+   border: none;
+   padding: 12px 30px;
+   font-size: 18px;
+   font-weight: 600;
+   transition: background-color 0.3s;
+ }
+ .btn-primary:hover {
+   background-color: #d62839;
+ }
+ 
+ /* ============================
+    Curso Card
+ =============================== */
+ .price {
+   font-weight: bold !important;
+ }
+ 
+ .curso-card {
+   position: relative;
+   transition: transform 0.3s ease;
+ }
+ .curso-card:hover {
+   transform: scale(1.05);
+ }
+ .curso-card:hover::after {
+   content: "Melhor preço somente hoje!";
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background-color: #28a745;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 10px;
+   font-size: 14px;
+   font-weight: bold;
+   z-index: 1;
+ }
+ 
+ .curso-card .card-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ 
+ .curso-card .ratings {
+   display: flex;
+ }
+ 
+ .curso-card .students {
+   font-size: 0.875rem;
+   color: #6c757d;
+ }
+ 
+ .curso-card .price {
+   font-size: 1.125rem;
+   font-weight: 600;
+ }
+ 
+ .curso-card .badge {
+   font-size: 1rem;
+   padding: 8px 15px;
+   border-radius: 20px;
+ }
+ 
+ /* ============================
+    Cursor com Gradiente
+ =============================== */
+ .cursor-gradient {
+   position: absolute;
+   border-radius: 50%;
+   pointer-events: none;
+   width: 20px;
+   height: 20px;
+   transition: background 0.3s ease;
+   background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
+   background-size: 200% 200%;
+ }
+ 
+ /* ============================
+    Depoimentos
+ =============================== */
+ .depoimentos h2 {
+   font-size: 2.5rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: #ff4c4c;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .depoimento-text {
+   font-size: 1.1rem;
+   font-style: italic;
+   line-height: 1.6;
+   color: #fff;
+   padding: 15px;
+ }
+ 
+ .stars {
+   font-size: 1.5rem;
+ }
+ 
+ .star {
+   color: #ff4c4c;
+ }
+ 
+ .depoimentos img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: 3px solid #ff4c4c;
+ }
+ 
+ .depoimentos p.mb-0 {
+   font-weight: bold;
+   font-size: 1rem;
+   color: #fff;
+ }
+ 
+ .card-depoimentos {
+   background-color: #222;
+   border-radius: 15px;
+   padding: 25px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+ /* ============================
+    Carrossel e Newsletter
+ =============================== */
+ .carousel-inner {
+   padding: 20px 0;
+ }
+ 
+ .newsletter-section {
+   padding: 50px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 90%;
+ }
+ 
+ .newsletter-box {
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   padding: 40px 30px;
+   margin: auto;
+   max-width: 700px;
+   color: #000;
+   text-align: center;
+   overflow: hidden;
+   background-color: #ffffff;
+ }
+ 
+ .newsletter-box h2 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+   font-size: 2.2rem;
+   margin-bottom: 15px;
+   background: linear-gradient(45deg, #ff0400, #ff3f34, #ff5350);
+   background-clip: text;
+   color: transparent;
+   animation: gradient 3s ease infinite;
+ }
+ 
+ .newsletter-box p {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1rem;
+   margin-bottom: 30px;
+   color: #000;
+ }
+ 
+ /* Animação de Gradiente */
+ @keyframes gradient {
+   0% {
+     background-position: 200% 0;
+   }
+   50% {
+     background-position: 0 100%;
+   }
+   100% {
+     background-position: 200% 0;
+   }
+ }
+ 
+ /* ============================
+    Formulários
+ =============================== */
+ .form-control {
+   border-radius: 10px;
+   padding: 15px;
+   font-size: 1rem;
+   transition: all 0.3s ease;
+   border: 2px solid #ff0400;
+   background-color: #fff;
+ }
+ 
+ .form-control:focus {
+   border-color: #ff0400;
+   outline: none;
+   box-shadow: 0 0 5px rgba(255, 127, 80, 0.7);
+ }
+ 
+ button.btn-newsletter {
+   background-color: #ff0400;
+   border: none;
+   padding: 15px;
+   font-size: 1.2rem;
+   color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+   cursor: pointer;
+ }
+ 
+ button.btn-newsletter:hover {
+   transform: translateY(-5px);
+ }
+ 
+ button.btn-newsletter:focus {
+   outline: none;
+ }
+ 
+ .newsletter-box:hover {
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* ============================
+    Ícone do Foguete
+ =============================== */
+ #rocketIcon {
+   position: fixed;
+   bottom: 200px;
+   right: 15px;
+   z-index: 99;
+   background: linear-gradient(to right, #ff3131, #ff6b6b);
+   border-radius: 50px;
+   color: #ffffff;
+   text-decoration: none;
+   width: 25px;
+   height: 25px;
+   padding: 20px;
+   font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+   animation: effect 5s infinite ease-in;
+   margin-top: 160px;
+ }
+ 
+ #rocketIcon:hover {
+   background: linear-gradient(to right, #ff0202, #ff6b6b);
+ }
+ 
+ /* ============================
+    Checkout de Pagamento
+ =============================== */
+ .checkout-card-header {
+   position: relative;
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+ }
+ 
+ .video-header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
