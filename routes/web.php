@@ -20,6 +20,8 @@ Route::prefix('pages')->group(function () {
     Route::get('/politica-reembolsos', [HomeController::class, 'pages.politicaReembolsos'])->name('pages.politicaReembolsos');
     Route::get('/checkout', [HomeController::class, 'checkout'])->name('pages.checkout');
     Route::get('/certificados', [HomeController::class, 'certificados'])->name('pages.certificados');
+    Route::post('/enviar-formulario', [HomeController::class, 'enviarFormulario'])->name('web.enviarFormulario');
+
 });
 
 // Rota para unidades, quem somos, e matrícula

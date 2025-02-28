@@ -46,6 +46,14 @@ class HomeController extends Controller
         return view('pages.certificado.certificado');
     }
 
+    /**
+     * método para realizar o envio do formulario
+     * @return void
+     */
+    public function enviarFormulario(Request $request){
+        dd($request->all()); die;
+    }
+
     public function news()
 {
     $dados = [
